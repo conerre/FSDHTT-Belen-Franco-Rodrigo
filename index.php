@@ -20,7 +20,7 @@
     <div class="input-group">
       <input type="text" class="form-control" aria-label="...">
       <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Categorías </button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Buscar </button>
         <!-- <span class="caret"></span> 
         <ul class="dropdown-menu dropdown-menu-right">
           <li><a href="#">Categorías</a></li>
@@ -60,9 +60,9 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto nacoennabdjbnwkaejbfkwjbn</p>
+         <p>Producto 1234</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
@@ -71,9 +71,9 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto nacoennabdjbnwkaejbfkwjbn</p>
+        <p>Producto 1234</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
@@ -82,9 +82,9 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto nacoennabdjbnwkaejbfkwjbn</p>
+        <p>Producto 1234</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
