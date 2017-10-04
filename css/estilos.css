@@ -1,3 +1,4 @@
+
 .navbar-default .navbar-brand {
     color: #d6d6d6;
 }
@@ -14,12 +15,16 @@
     font-size: 250%;
 }
 
+.navbar {
+    background-color: #565656;
+}
 .site-footer{
 	background-color: brown;
 }
 
 .navbar {
    margin-bottom: 0px;
+   margin: auto 0;
 }
 
 footer {
@@ -32,4 +37,27 @@ footer {
 
 .img-slide-home {
 	width: 100%;
+}
+
+.nav-sesion {
+	background-color: #76685d;
+	color: white;
+}
+
+.nav-sesion a{
+	color: white;
+	padding: 5px;
+	text-align: right;
+}
+
+.jumbotron h4 {
+	border-bottom: black 1px solid;
+    width: 19%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+	margin: 0;
+	padding: 0;
 }
