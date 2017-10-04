@@ -93,9 +93,9 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto nacoennabdjbnwkaejbfkwjbn</p>
+        <p>Producto 1234</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
