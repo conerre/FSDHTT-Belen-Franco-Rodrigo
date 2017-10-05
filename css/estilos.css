@@ -196,5 +196,7 @@ label{
     font-size: 14px;
 }
 
-/* Registración */
-
+.glyphicon{
+  color: darkgrey;
+  margin-right: 5px;
+}

@@ -19,9 +19,8 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
 </form> -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-lg-12">
       <div id="my-slider" class="carousel slide" data-ride="carousel">
         
         <!-- indicadores dot nav -->
@@ -64,7 +63,6 @@
         </a>
 
       </div>
-    </div>
   </div>  
 </div>
 <div class="container">
@@ -101,7 +99,7 @@
         <h4>Banco madera jardín</h4>
         <p>Producto 123</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
@@ -112,7 +110,7 @@
         <h4>Banco madera jardín</h4>
         <p>Producto 123</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
@@ -123,7 +121,7 @@
         <h4>Banco madera jardín</h4>
         <p>Producto 123</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
@@ -134,7 +132,7 @@
         <h4>Banco madera jardín</h4>
         <p>Producto 123</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->

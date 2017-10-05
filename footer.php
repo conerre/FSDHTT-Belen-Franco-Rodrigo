@@ -9,7 +9,7 @@
                <div class="p-4 col-md-3">
                   <h4 class="mb-4 text-white">Sitio</h4>
                   <ul class="list-unstyled">
-                     <a href="#" class="text-white">Home</a>
+                     <a href="#" class="text-white"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
                      <br>
                      <a href="#" class="text-white">Nosotros</a>
                      <br>
@@ -23,13 +23,13 @@
                <div class="p-4 col-md-3">
                   <h4 class="mb-4">Contacto</h4>
                   <p>
-                     <a href="tel:+246 - 542 550 5462" class="text-white"><i class="fa d-inline mr-3 fa-phone text-info"></i>+549xxxxxxxxxx</a>
+                     <a href="tel:+246 - 542 550 5462" class="text-white"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+549xxxxxxxxxx</a>
                   </p>
                   <p>
-                     <a href="mailto:info@pingendo.com" class="text-white"><i class="fa d-inline mr-3 fa-envelope-o text-info"></i>info@asienta.com</a>
+                     <a href="mailto:info@pingendo.com" class="text-white"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@asienta.com</a>
                   </p>
                   <p>
-                     <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-white" target="blank"><i class="fa d-inline mr-3 fa-map-marker text-info"></i>Alguna direccion</a>
+                     <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-white" target="blank"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Alguna direccion</a>
                   </p>
                </div>
                <div class="p-4 col-md-3">
@@ -45,3 +45,4 @@
           </div>
       </footer>
       
+
