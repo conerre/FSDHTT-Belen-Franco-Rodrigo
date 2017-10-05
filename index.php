@@ -17,7 +17,7 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
 </form> -->
-<?php require_once "js1.php"; ?>
+<?php require_once "js.php"; ?>
 <div class="container">
   <div class="row">
       <div id="my-slider" class="carousel slide" data-ride="carousel">
