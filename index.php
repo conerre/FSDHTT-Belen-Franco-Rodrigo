@@ -41,13 +41,13 @@
               </div>
           </div>
           <div class="item">
-              <img src="images/PORTADA2.jpg" alt="algo" class="img-responsive">
+              <img src="images/SLIDE2.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
                 <h2>blalbalbalbal</h2>
               </div>
           </div>
           <div class="item">
-              <img src="images/PORTADA3.jpg" alt="algo" class="img-responsive">
+              <img src="images/SLIDE3.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
                 <h2>blalbalbalba</h2>
               </div>
