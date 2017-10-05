@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
   <title>Asienta</title>
 </head>
-<body>
+
 <?php require_once "header.php";  ?>
 
 
@@ -142,6 +142,7 @@
  
 </div>
 <?php require_once("footer.php"); ?>
+<?php require_once "js.php";  ?>
 </body>
 </html>
 
