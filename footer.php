@@ -17,7 +17,7 @@
                      <br>
                      <a href="#" class="text-white">Historias</a>
                      <br>
-                     <a href="preguntas-frecuentes.html" class="text-white">Preguntas fecuentes</a>
+                     <a href="preguntas-frecuentes.php" class="text-white">Preguntas fecuentes</a>
                   </ul>
                </div>
                <div class="p-4 col-md-3">

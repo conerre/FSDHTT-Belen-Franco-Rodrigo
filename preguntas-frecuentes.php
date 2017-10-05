@@ -8,7 +8,7 @@
 	<title>Asienta</title>
 </head>
 <body>
-<?php require_once "header.php";  ?>
+<?php require_once ("header.php");  ?>
 <div class="row">
   <div class="preguntas-frecuentes">
     <h3>Preguntas frecuentes</h3>
@@ -24,49 +24,7 @@
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
   </div>
 </div>
-      <footer>
-          <div class="container">
-            <div class="row">
-               <div class="p-4 col-md-3">
-                  <h2 class="mb-4 text-white">ASIENTA</h2>
-                  <p class="text-white">Siempre estamos para vos</p>
-               </div>
-               <div class="p-4 col-md-3">
-                  <h2 class="mb-4 text-white">Sitio</h2>
-                  <ul class="list-unstyled">
-                     <a href="#" class="text-white">Home</a>
-                     <br>
-                     <a href="#" class="text-white">Nosotros</a>
-                     <br>
-                     <a href="#" class="text-white">Nuestros Servicios</a>
-                     <br>
-                     <a href="#" class="text-white">Historias</a>
-                  </ul>
-               </div>
-               <div class="p-4 col-md-3">
-                  <h2 class="mb-4">Contacto</h2>
-                  <p>
-                     <a href="tel:+246 - 542 550 5462" class="text-white"><i class="fa d-inline mr-3 fa-phone text-info"></i>+549xxxxxxxxxx</a>
-                  </p>
-                  <p>
-                     <a href="mailto:info@pingendo.com" class="text-white"><i class="fa d-inline mr-3 fa-envelope-o text-info"></i>info@asienta.com</a>
-                  </p>
-                  <p>
-                     <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-white" target="blank"><i class="fa d-inline mr-3 fa-map-marker text-info"></i>Alguna direccion</a>
-                  </p>
-               </div>
-               <div class="p-4 col-md-3">
-                  <h3 class="mb-4 text-light">Suscribite</h3>
-                  <form>
-                     <fieldset class="form-group text-white"> <label for="exampleInputEmail1">A nuestro newsletter</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
-                     </fieldset>
-                     <button type="submit" class="btn btn-outline-light">Enviar</button>
-                  </form>
-               </div>
-            </div>
-          </div>
-      </footer>
+  <?php require_once("footer.php"); ?>
 </body>
 </html>
 
