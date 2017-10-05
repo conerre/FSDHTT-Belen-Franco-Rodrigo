@@ -1,13 +1,13 @@
-</div>
-      <footer>
+
+  <footer>
           <div class="container">
             <div class="row">
                <div class="p-4 col-md-3">
-                  <h2 class="mb-4 text-white">ASIENTA</h2>
+                  <h4 class="mb-4 text-white">ASIENTA</h4>
                   <p class="text-white">Siempre estamos para vos</p>
                </div>
                <div class="p-4 col-md-3">
-                  <h2 class="mb-4 text-white">Sitio</h2>
+                  <h4 class="mb-4 text-white">Sitio</h4>
                   <ul class="list-unstyled">
                      <a href="#" class="text-white">Home</a>
                      <br>
@@ -16,10 +16,12 @@
                      <a href="#" class="text-white">Nuestros Servicios</a>
                      <br>
                      <a href="#" class="text-white">Historias</a>
+                     <br>
+                     <a href="preguntas-frecuentes.html" class="text-white">Preguntas fecuentes</a>
                   </ul>
                </div>
                <div class="p-4 col-md-3">
-                  <h2 class="mb-4">Contacto</h2>
+                  <h4 class="mb-4">Contacto</h4>
                   <p>
                      <a href="tel:+246 - 542 550 5462" class="text-white"><i class="fa d-inline mr-3 fa-phone text-info"></i>+549xxxxxxxxxx</a>
                   </p>
@@ -31,7 +33,7 @@
                   </p>
                </div>
                <div class="p-4 col-md-3">
-                  <h2 class="mb-4 text-light">Suscribite</h2>
+                  <h4 class="mb-4 text-light">Suscribite</h4>
                   <form>
                      <fieldset class="form-group text-white"> <label for="exampleInputEmail1">A nuestro newsletter</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
@@ -42,3 +44,4 @@
             </div>
           </div>
       </footer>
+      

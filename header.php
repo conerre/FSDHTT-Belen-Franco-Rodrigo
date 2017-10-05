@@ -1,9 +1,6 @@
-	<title>Navbar</title>
-</head>
-<body>
 <div class="nav-sesion">
   <a href="inicio-sesion.html">Iniciar Sesión</a>
-  <a href="registro.html">Registrar</a>
+  <a href="registracion.html">Registrar</a>
 </div>
 <nav class="navbar navbar-default navbar-static-top" >
   <div class="container-fluid">
@@ -15,7 +12,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand text-light" href="#">Asienta</a>
+      <a class="navbar-brand text-light" href="index.html"><img class="logo-nav" src="images/logo.png"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -48,3 +45,22 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<!-- /.ACÁ ARRANCA EL FORM 
+<form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+</form> -->
+<div class="row">
+  
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Buscar </button>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
