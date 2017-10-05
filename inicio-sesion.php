@@ -18,41 +18,25 @@
     </div>
   </div><!-- /.container-fluid -->
 </nav>
-
-
-<div class="container">
-  <div class="row">
-    <div id='col-md-4 col-sm-8 col-xs-10'>
-      <div class="registration">
-        <form id='register' action='confirmacion.php' method='POST'>
-            <fieldset >
-                <legend>Iniciar sesión</legend>
-
-                <div class='section-form'>
-                    <label for='email' >Email:</label><br/>
-                    <input type='text' name='email' id='email' value='' maxlength="50" /><br/>
-                    <span id='register_email_errorloc' class='error'></span>
-                </div>
-               
-                <div class='section-form' style='height:80px;'>
-                    <label for='password' >Contaseña*:</label><br/>
-                    <div class='pwdwidgetdiv' id='thepwddiv' ></div>
-                    <input type='password' name='password' id='password' maxlength="50" />
-                    <div id='register_password_errorloc' class='error'></div>
-                </div>
-                <div class="section-form">
-                <label><input type="checkbox" name="checkbox" id="cbox1" value="first_checkbox"><p class="short_explanation"> Recordarme </p> </label><br>
-                </div>
-                <div class='section-form-submit'>
-                    <input type='submit' name='Submit' value='Iniciar sesion' />
-                </div>
-
-            </fieldset>
-          </form>
-        </div>
-      </div>
-    </div> <!-- /.row -->
-</div><!-- /.container -->
+    <div class="row"> 
+        <div class="col-md-offset-5 col-md-2"> 
+            <div class="form-login" style="background-color: #967760; padding: 30px 20px; margin: 80px 0px;"> 
+            <h4 style="color: white;">Iniciar Sesión</h4> 
+            <input type="email" id="userName" class="form-control input-sm chat-input" placeholder="email" /> 
+            </br> 
+            <input type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="contraseña" /> 
+            </br> 
+            <div class="wrapper"> 
+            <span class="group-btn">      
+                <a href="#" class="btn btn-default btn-md"> Ingresar <i class="fa fa-sign-in"></i></a> 
+            </span> 
+            </div> 
+            </div> 
+         
+        </div> 
+      </div> 
+    </div> 
+</div> 
       <?php require_once("footer.php"); ?>
 </body>
 </html>
