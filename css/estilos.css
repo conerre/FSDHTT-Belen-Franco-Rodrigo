@@ -136,9 +136,6 @@ label{
     color: white;
 }
 
-input {
-	width: 80%;
-}
 
 .form-sesion {
 	background-color: black;
@@ -194,4 +191,10 @@ input {
     width: 30%;
 }
 
+
+.nav-sesion a {
+    font-size: 14px;
+}
+
+/* Registración */
 
