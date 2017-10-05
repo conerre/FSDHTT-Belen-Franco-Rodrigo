@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <title>Navbar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Navbar</title>
 </head>
 <body>
 <div class="nav-sesion">
   <a href="inicio-sesion.html">Iniciar Sesión</a>
-  <a href="registro.html">Registrar</a>
+  <a href="registracion.html">Registrar</a>
 </div>
 <nav class="navbar navbar-default navbar-static-top" >
   <div class="container-fluid">
@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand text-light" href="#">Asienta</a>
+      <a class="navbar-brand text-light" href="index.html"><img class="logo-nav" src="images/logo.png"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,30 +69,28 @@
     <div class="input-group">
       <input type="text" class="form-control" aria-label="...">
       <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Categorias </button>
-        <!-- <span class="caret"></span> 
-        <ul class="dropdown-menu dropdown-menu-right">
-          <li><a href="#">Categorías</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul> /btn-group -->
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Buscar </button>
       </div><!-- /btn-group -->
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
 <img class="img-slide-home" src="images/SLIDE1.jpg">
-<h3 class="categorias-h3">Categorías</h3>
+
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 col-md-6">
+    <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <img src="images/categoria_exteriores.jpg" alt="...">
         
       </div><!-- /thumbnail-->
     </div><!-- /col-sm-6 col-md-4 -->
-     <div class="col-sm-12 col-md-6">
+     <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="images/categoria_exteriores.jpg" alt="...">
+        
+      </div><!-- /thumbnail-->
+    </div><!-- /col-sm-6 col-md-4 -->
+    <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <img src="images/categoria_exteriores.jpg" alt="...">
         
@@ -110,9 +108,9 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto 1234 </p>
+        <p>Producto nacoennabdjbnwkaejbfkwjbn</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
@@ -121,9 +119,9 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto 1234</p>
+        <p>Producto nacoennabdjbnwkaejbfkwjbn</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
@@ -132,10 +130,9 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto 1234</p>
+        <p>Producto nacoennabdjbnwkaejbfkwjbn</p>
         <h5>$3.500</h5>
-        <p>
-         <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div><!-- /col-sm-6 col-md-4 -->
@@ -157,11 +154,11 @@
           <div class="container">
             <div class="row">
                <div class="p-4 col-md-3">
-                  <h2 class="mb-4 text-white">ASIENTA</h2>
+                  <h4 class="mb-4 text-white">ASIENTA</h4>
                   <p class="text-white">Siempre estamos para vos</p>
                </div>
                <div class="p-4 col-md-3">
-                  <h2 class="mb-4 text-white">Sitio</h2>
+                  <h4 class="mb-4 text-white">Sitio</h4>
                   <ul class="list-unstyled">
                      <a href="#" class="text-white">Home</a>
                      <br>
@@ -170,10 +167,12 @@
                      <a href="#" class="text-white">Nuestros Servicios</a>
                      <br>
                      <a href="#" class="text-white">Historias</a>
+                     <br>
+                     <a href="preguntas-frecuentes.html" class="text-white">Preguntas fecuentes</a>
                   </ul>
                </div>
                <div class="p-4 col-md-3">
-                  <h2 class="mb-4">Contacto</h2>
+                  <h4 class="mb-4">Contacto</h4>
                   <p>
                      <a href="tel:+246 - 542 550 5462" class="text-white"><i class="fa d-inline mr-3 fa-phone text-info"></i>+549xxxxxxxxxx</a>
                   </p>
@@ -185,7 +184,7 @@
                   </p>
                </div>
                <div class="p-4 col-md-3">
-                  <h2 class="mb-4 text-light">Suscribite</h2>
+                  <h4 class="mb-4 text-light">Suscribite</h4>
                   <form>
                      <fieldset class="form-group text-white"> <label for="exampleInputEmail1">A nuestro newsletter</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
@@ -198,3 +197,4 @@
       </footer>
 </body>
 </html>
+

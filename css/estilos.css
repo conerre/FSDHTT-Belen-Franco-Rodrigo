@@ -1,4 +1,7 @@
+body {
+	font-family: 'Raleway', sans-serif;
 
+}
 .navbar-default .navbar-brand {
     color: #d6d6d6;
 }
@@ -27,16 +30,37 @@
    margin: auto 0;
 }
 
+.categorias-h3{
+	text-align: center;
+	background-color: grey;
+	color: white;
+	margin: 0px;
+	padding: 10px 0px;
+	font-size: 16px;
+
+	
+}
+
 footer {
   /*position: absolute;*/
     bottom: 0;
     width: 100%;
   background-color: #efefef;
   text-align: center;
+  padding: 20px 0px;
+}
+
+footer a{
+	color: grey;
+}
+
+footer label{
+	color: grey;
 }
 
 .img-slide-home {
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 .nav-sesion {
@@ -61,3 +85,113 @@ footer {
 	margin: 0;
 	padding: 0;
 }
+
+.logo-sesion{
+	height: 40px;
+	margin: 5px;
+
+}
+
+.logo-nav{
+	height: 40px;
+	margin: -10px;
+}
+
+.registration {
+	background-color: #967760;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    border: 3px solid white;
+    padding: 15px;
+    color: white;
+
+}
+
+.section-form{
+	margin: auto;
+	margin-top: 10px;
+}
+
+.section-form-submit{
+	width: 20%;
+	color: black;
+}
+
+legend {
+	border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    color: #ffffff;
+    width: 40%;
+}
+
+.short_explanation {
+	font-size: 10px;
+    color: white;
+}
+
+label{
+	font-weight: 400;
+    color: white;
+}
+
+input {
+	width: 80%;
+}
+
+.form-sesion {
+	background-color: black;
+}
+
+.center-block {  
+  display: block;  
+  margin-right: auto;  
+  margin-left: auto;  
+}
+
+.div-background-fullpage {
+    width: 692px;
+    margin: 32px auto;
+}
+
+.preguntas-frecuentes{
+	margin: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.preguntas-frecuentes h3{
+	text-align: center;
+	border-bottom: black solid 1px;
+}
+
+.nav-sesion a {
+    color: white;
+    padding: 7px;
+    text-align: center;
+    font-size: 11px;
+    margin: 0px;
+}
+
+.container {
+	width: 100%;
+}
+
+/* For mobile phones: */
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+   .registration {
+    width: 40%;
+}
+
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+    .registration {
+    width: 30%;
+}
+
+
