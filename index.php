@@ -8,10 +8,8 @@
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
   <title>Asienta</title>
 </head>
-
+<body>
 <?php require_once "header.php";  ?>
-
-
 <!-- /.ACÁ ARRANCA EL FORM 
 <form class="navbar-form navbar-right">
         <div class="form-group">
@@ -19,7 +17,8 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
 </form> -->
-<div class="container-fluid">
+<?php require_once "js1.php"; ?>
+<div class="container">
   <div class="row">
       <div id="my-slider" class="carousel slide" data-ride="carousel">
         
@@ -42,13 +41,13 @@
           <div class="item">
               <img src="images/SLIDE2.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
-                <h2>blalbalbalbal</h2>
+                <h2>cosas lindas</h2>
               </div>
           </div>
           <div class="item">
               <img src="images/SLIDE3.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
-                <h2>blalbalbalba</h2>
+                <h2>mas cosas lindas</h2>
               </div>
           </div>
         </div>
@@ -140,7 +139,6 @@
  
 </div>
 <?php require_once("footer.php"); ?>
-<?php require_once "js.php";  ?>
 </body>
 </html>
 

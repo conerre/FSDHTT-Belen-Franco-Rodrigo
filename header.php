@@ -1,4 +1,4 @@
-<body>
+<script src="https://use.fontawesome.com/c276b8a2b3.js"></script>
 <div class="nav-sesion text-right">
   <a href="inicio-sesion.php">Iniciar Sesión</a>
   <a href="registracion.php">Registrar</a>
@@ -46,4 +46,10 @@
     </div><!-- /.navbar-collapse -->
     
   </div><!-- /.container-fluid -->
+  <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Busqueda">
+        </div>
+        <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
 </nav>
