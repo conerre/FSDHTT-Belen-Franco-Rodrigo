@@ -10,8 +10,63 @@
 </head>
 <body>
 <?php require_once "header.php";  ?>
-<img class="img-slide-home" src="images/SLIDE1.jpg">
 
+
+<!-- /.ACÁ ARRANCA EL FORM 
+<form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+</form> -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div id="my-slider" class="carousel slide" data-ride="carousel">
+        
+        <!-- indicadores dot nav -->
+
+        <ol class="carousel-indicators">
+            <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#my-slider" data-slide-to="1"></li>
+            <li data-target="#my-slider" data-slide-to="2"></li>
+        </ol>
+
+        <!-- wrapper para los slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+              <img src="images/SLIDE1.jpg" alt="algo" class="img-responsive">
+              <div class="carousel-caption">
+                <h2>Constantemente innovando</h2>
+              </div>
+          </div>
+          <div class="item">
+              <img src="images/PORTADA2.jpg" alt="algo" class="img-responsive">
+              <div class="carousel-caption">
+                <h2>blalbalbalbal</h2>
+              </div>
+          </div>
+          <div class="item">
+              <img src="images/PORTADA3.jpg" alt="algo" class="img-responsive">
+              <div class="carousel-caption">
+                <h2>blalbalbalba</h2>
+              </div>
+          </div>
+        </div>
+
+        <!-- controles next y prev -->
+
+        <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </div>  
+</div>
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-md-4">
@@ -55,17 +110,6 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto 213</p>
-        <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
-      </div>
-    </div>
-  </div><!-- /col-sm-6 col-md-4 -->
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <img src="images/producto1.jpg" alt="...">
-      <div class="caption">
-        <h4>Banco madera jardín</h4>
         <p>Producto 123</p>
         <h5>$3.500</h5>
         <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
@@ -82,7 +126,18 @@
         <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
-  </div>
+  </div><!-- /col-sm-6 col-md-4 -->
+  <div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+      <img src="images/producto1.jpg" alt="...">
+      <div class="caption">
+        <h4>Banco madera jardín</h4>
+        <p>Producto 123</p>
+        <h5>$3.500</h5>
+        <p><a href="#" class="btn btn-primary" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+      </div>
+    </div>
+  </div><!-- /col-sm-6 col-md-4 -->
 </div>
  
 </div>

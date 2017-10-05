@@ -14,7 +14,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       
-      <a href="index.html"><img class="logo-sesion" src="images/logo.png"></a>
+      <a href="index.php"><img class="logo-sesion" src="images/logo.png"></a>
     </div>
   </div><!-- /.container-fluid -->
 </nav>
