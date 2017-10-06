@@ -21,7 +21,7 @@
 </nav>
    <div class="row"> 
         <div class="col-md-offset-4 col-md-4"> 
-            <div class="form-login" style="background-color: #967760; padding: 30px; margin: 31px 72px;"> 
+            <div class="form-login" style="background-color: #967760; padding: 30px; margin: 80px 72px;"> 
             <h4 style="color: white;">Registrarse</h4> 
             <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="nombre completo" /> 
             </br> 

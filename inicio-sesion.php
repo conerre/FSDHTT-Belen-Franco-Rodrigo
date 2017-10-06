@@ -31,6 +31,9 @@
             <span class="group-btn">      
                 <a href="#" class="btn btn-default btn-md"> Ingresar <i class="fa fa-sign-in"></i></a> 
             </span> 
+            <div class="form-group">
+                <label><input type="checkbox" name="terminos" id="cbox1" value="first_checkbox"> Recordarme </label><br>
+                </div>
             </div> 
             </div> 
          
