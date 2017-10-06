@@ -18,7 +18,7 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
 </form> -->
-<?php require_once "js.php"; ?>
+
 <div class="container">
   <div class="row">
       <div id="my-slider" class="carousel slide" data-ride="carousel">
@@ -36,19 +36,19 @@
           <div class="item active">
               <img src="images/SLIDE1.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
-                <h2>Constantemente innovando</h2>
+                <h2></h2>
               </div>
           </div>
           <div class="item">
               <img src="images/SLIDE2.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
-                <h2>cosas lindas</h2>
+                <h2></h2>
               </div>
           </div>
           <div class="item">
               <img src="images/SLIDE3.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
-                <h2>mas cosas lindas</h2>
+                <h2></h2>
               </div>
           </div>
         </div>

@@ -32,7 +32,7 @@
         </li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-left">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -43,14 +43,15 @@
             <li><a href="#">Separated link</a></li>
           </ul>
         </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-    
-  </div><!-- /.container-fluid -->
-  <form class="navbar-form navbar-right">
+          <form class="navbar-form navbar-right">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Busqueda">
         </div>
         <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
       </form>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    
+  </div><!-- /.container-fluid -->
 </nav>
+<?php require_once "js.php"; ?>
