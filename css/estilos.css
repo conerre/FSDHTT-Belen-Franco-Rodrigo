@@ -150,22 +150,6 @@ label{
 	width: 100%;
 }
 
-/* For mobile phones: */
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-  .registration {
-  width: 40%;
-}
-
-}
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    
-  .registration {
-  width: 30%;
-}
-
 /*Footer*/
 
 footer {
@@ -201,3 +185,24 @@ footer label{
   border-bottom: black solid 1px;
 }
 
+#exampleInputEmail1{
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* For mobile phones: */
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+  .registration {
+  width: 40%;
+}
+
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+  .registration {
+  width: 30%;
+}
