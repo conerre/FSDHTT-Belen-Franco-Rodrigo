@@ -1,5 +1,22 @@
+/*Para todo el body*/
 body {
 	font-family: 'Raleway', sans-serif;
+}
+  /*Inicio y registro top right*/
+
+.nav-sesion a {
+  color: white;
+  padding: 7px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin:20px 0px;
+}
+/*Header*/
+
+.navbar-form .navbar-left .form-group .form-control{
+  text-align: center;
+}
 
 }
 .navbar-default .navbar-brand {
@@ -36,27 +53,9 @@ body {
 	color: white;
 	margin: 0px;
 	padding: 10px 0px;
-	font-size: 16px;
-
-	
+	font-size: 16px;	
 }
 
-footer {
-  /*position: absolute;*/
-    bottom: 0;
-    width: 100%;
-  background-color: #efefef;
-  text-align: center;
-  padding: 20px 0px;
-}
-
-footer a{
-	color: grey;
-}
-
-footer label{
-	color: grey;
-}
 
 .img-slide-home {
 	width: 100%;
@@ -68,11 +67,7 @@ footer label{
 	color: white;
 }
 
-.nav-sesion a{
-	color: white;
-	padding: 5px;
-	text-align: right;
-}
+/*Main*/
 
 .jumbotron h4 {
 	border-bottom: black 1px solid;
@@ -99,14 +94,13 @@ footer label{
 
 .registration {
 	background-color: #967760;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 90%;
-    border: 3px solid white;
-    padding: 15px;
-    color: white;
-
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  border: 3px solid white;
+  padding: 15px;
+  color: white;
 }
 
 .section-form{
@@ -121,19 +115,19 @@ footer label{
 
 legend {
 	border-bottom: 1px solid #e5e5e5;
-    text-align: center;
-    color: #ffffff;
-    width: 40%;
+  text-align: center;
+  color: #ffffff;
+  width: 40%;
 }
 
 .short_explanation {
 	font-size: 10px;
-    color: white;
+  color: white;
 }
 
 label{
 	font-weight: 400;
-    color: white;
+  color: white;
 }
 
 
@@ -148,27 +142,8 @@ label{
 }
 
 .div-background-fullpage {
-    width: 692px;
-    margin: 32px auto;
-}
-
-.preguntas-frecuentes{
-	margin: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.preguntas-frecuentes h3{
-	text-align: center;
-	border-bottom: black solid 1px;
-}
-
-.nav-sesion a {
-    color: white;
-    padding: 7px;
-    text-align: center;
-    font-size: 11px;
-    margin: 0px;
+  width: 692px;
+  margin: 32px auto;
 }
 
 .container {
@@ -179,24 +154,50 @@ label{
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-   .registration {
-    width: 40%;
+  .registration {
+  width: 40%;
 }
 
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     
-    .registration {
-    width: 30%;
+  .registration {
+  width: 30%;
 }
 
+/*Footer*/
 
-.nav-sesion a {
-    font-size: 14px;
+footer {
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
+  background-color: #efefef;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+footer a{
+  color: grey;
+}
+
+footer label{
+  color: grey;
 }
 
 .glyphicon{
   color: darkgrey;
   margin-right: 5px;
 }
+
+.preguntas-frecuentes{
+  margin: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.preguntas-frecuentes h3{
+  text-align: center;
+  border-bottom: black solid 1px;
+}
+
