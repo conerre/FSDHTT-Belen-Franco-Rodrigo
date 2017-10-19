@@ -1,19 +1,5 @@
 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <?php include("funciones.php") ?>
-  <title>Asienta</title>
-  <link rel="icon" 
-      type="image/png" 
-      href="images/favicon.png">
-</head>
-<body>
 <?php require_once "header.php";  ?>
 <!-- /.ACÁ ARRANCA EL FORM 
 <form class="navbar-form navbar-right">

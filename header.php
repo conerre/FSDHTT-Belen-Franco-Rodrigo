@@ -1,4 +1,19 @@
 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <?php include("funciones.php") ?>
+  <title>Asienta</title>
+  <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+</head>
+<body>
 <script src="https://use.fontawesome.com/c276b8a2b3.js"></script>
 <div class="nav-sesion text-right" style="padding-right: 15px;">
 
@@ -16,7 +31,7 @@
            
               <a href="logout.php">Logout</a>
             
-              Hola <?=obtenerUsuarioLogueado()["nombre"] ?>
+              Hola <a href="miperfil.php"><?=obtenerUsuarioLogueado()["nombre"] ?>
            
           <?php endif; ?>
         
