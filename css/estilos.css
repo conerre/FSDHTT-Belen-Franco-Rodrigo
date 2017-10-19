@@ -201,6 +201,12 @@ a {
 
 /* For mobile phones: */
 
+@media only screen and (max-width: 320px) {
+    /* For phones: */
+.navbar-default .collapse li a {
+    text-align: center;
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
   .registration {

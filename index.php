@@ -24,7 +24,7 @@
 </form> -->
 
 <div class="container">
-  <div class="row">
+  <div class="row hidden-xs hidden-sm">
       <div id="my-slider" class="carousel slide" data-ride="carousel">
         
         <!-- indicadores dot nav -->
