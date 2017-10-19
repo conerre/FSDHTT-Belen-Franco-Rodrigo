@@ -9,7 +9,7 @@
                <div class="p-4 col-md-3">
                   <h4 class="mb-4 text-white">Sitio</h4>
                   <ul class="list-unstyled">
-                     <a href="#" class="text-white"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
+                     <a href="index.php" class="text-white"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
                      <br>
                      <a href="#" class="text-white">Nosotros</a>
                      <br>

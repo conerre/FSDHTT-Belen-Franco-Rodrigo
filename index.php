@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <?php include("funciones.php") ?>
   <title>Asienta</title>
+  <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
 </head>
 <body>
 <?php require_once "header.php";  ?>
@@ -34,19 +38,19 @@
         <!-- wrapper para los slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-              <img src="images/SLIDE1.jpg" alt="algo" class="img-responsive">
-              <div class="carousel-caption">
-                <h2></h2>
-              </div>
-          </div>
-          <div class="item">
-              <img src="images/SLIDE2.jpg" alt="algo" class="img-responsive">
+              <img src="images/SLIDE5.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
                 <h2></h2>
               </div>
           </div>
           <div class="item">
               <img src="images/SLIDE3.jpg" alt="algo" class="img-responsive">
+              <div class="carousel-caption">
+                <h2></h2>
+              </div>
+          </div>
+          <div class="item">
+              <img src="images/SLIDE4.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
                 <h2></h2>
               </div>
@@ -69,19 +73,19 @@
   <div class="row">
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img src="images/categoria_exteriores.jpg" alt="...">
+        <img src="images/categoria_dormitorio.jpg" alt="...">
         
       </div><!-- /thumbnail-->
     </div><!-- /col-sm-6 col-md-4 -->
      <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img src="images/categoria_exteriores.jpg" alt="...">
+        <img src="images/categoria_living.jpg" alt="...">
         
       </div><!-- /thumbnail-->
     </div><!-- /col-sm-6 col-md-4 -->
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img src="images/categoria_exteriores.jpg" alt="...">
+        <img src="images/categoria_comedor.jpg" alt="...">
         
       </div><!-- /thumbnail-->
     </div><!-- /col-sm-6 col-md-4 -->
@@ -105,7 +109,7 @@
   </div><!-- /col-sm-6 col-md-4 -->
   <div class="col-sm-6 col-md-3">
     <div class="thumbnail">
-      <img src="images/producto1.jpg" alt="...">
+      <img src="images/producto2.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
         <p>Producto 123</p>
@@ -116,7 +120,7 @@
   </div><!-- /col-sm-6 col-md-4 -->
   <div class="col-sm-6 col-md-3">
     <div class="thumbnail">
-      <img src="images/producto1.jpg" alt="...">
+      <img src="images/producto3.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
         <p>Producto 123</p>
@@ -140,7 +144,6 @@
  
 </div>
 <?php require_once("footer.php"); ?>
-<?php require_once "js.php"; ?>
 </body>
 </html>
 

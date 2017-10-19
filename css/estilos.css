@@ -12,6 +12,10 @@ body {
   font-weight: bold;
   margin:20px 0px;
 }
+
+
+
+
 /*Header*/
 
 .navbar-form .navbar-left .form-group .form-control{
@@ -189,6 +193,10 @@ footer label{
   max-width: 300px;
   display: block;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* For mobile phones: */

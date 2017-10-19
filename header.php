@@ -1,8 +1,26 @@
 
 <script src="https://use.fontawesome.com/c276b8a2b3.js"></script>
-<div class="nav-sesion text-right">
-  <a href="inicio-sesion.php">Iniciar Sesión</a>
-  <a href="registracion.php">Registrar</a>
+<div class="nav-sesion text-right" style="padding-right: 15px;">
+
+          <?php 
+          require_once "funciones.php";
+          if(!estaLogueado()) : ?>
+          
+              <a href="registracion.php">Registracion</a>
+           
+              <a href="inicio-sesion.php">Login</a>
+           
+          <?php endif; ?>
+         
+          <?php if (estaLogueado()) : ?>
+           
+              <a href="logout.php">Logout</a>
+            
+              Hola <?=obtenerUsuarioLogueado()["nombre"] ?>
+           
+          <?php endif; ?>
+        
+ 
 </div>
 <nav class="navbar navbar-default navbar-static-top" >
   <div class="container-fluid">
@@ -19,30 +37,40 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-left">
         <li class=""><a href="#">Productos<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nostros <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nosotros <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Contacto</a></li>
             <li><a href="#">Nuestra Historia</a></li>
             <li><a href="#">Experiencias</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">¿Cómo realizar una compra?</a></li>
             <li role="separator" class="divider"></li>
           </ul>
         </li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-left">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Exteriores</a></li>
+            <li><a href="#">Living</a></li>
+            <li><a href="#">Comedor</a></li>
+             <li><a href="#">Dormitorio</a></li>
+              <li><a href="#">Accesorio</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Productos</a></li>
           </ul>
         </li>
+        </ul>
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">Contacto</a></li>
+            
+          </ul>
+        <ul>
           <form class="navbar-form navbar-right">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Busqueda">

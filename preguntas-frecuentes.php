@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php require_once ("header.php");  ?>
+<?php require_once("funciones.php"); ?>
 <div class="row">
   <div class="preguntas-frecuentes">
     <h3>Preguntas frecuentes</h3>
@@ -24,7 +25,6 @@
   </div>
 </div>
   <?php require_once("footer.php"); ?>
-<?php require_once "js.php"; ?>
 </body>
 </html>
 

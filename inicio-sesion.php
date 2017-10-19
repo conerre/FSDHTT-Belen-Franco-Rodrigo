@@ -10,35 +10,71 @@
 	<title>Asienta</title>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-static-top" >
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      
-      <a href="index.php"><img class="logo-sesion" src="images/logo.png"></a>
-    </div>
-  </div><!-- /.container-fluid -->
-</nav>
+  <?php
+  require_once("funciones.php");
+
+  if (estaLogueado()) {
+    header("Location:index.php");exit;
+  }
+
+  if ($_POST) {
+    $arrayDeErrores = validarLogin();
+
+    if (count($arrayDeErrores) == 0) {
+      loguear($_POST["email"]);
+
+      if (isset($_POST["recordame"])) {
+        setcookie("usuarioLogueado", $_POST["email"], time()+60*60*24*30);
+      }
+
+      header("Location:perfilDeUsuario.php?email=" . $_POST["email"]);
+    }
+  }
+
+?>
+
+<?php include("header.php"); ?>
+
+
+
     <div class="row"> 
-        <div class="col-md-offset-5 col-md-2"> 
-            <div class="form-login" style="background-color: #967760; padding: 30px 20px; margin: 80px 0px;"> 
-            <h4 style="color: white;">Iniciar Sesión</h4> 
-            <input type="email" id="userName" class="form-control input-sm chat-input" placeholder="email" /> 
-            </br> 
-            <input type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="contraseña" /> 
-            </br> 
-            <div class="wrapper"> 
-            <span class="group-btn">      
-                <a href="#" class="btn btn-default btn-md"> Ingresar <i class="fa fa-sign-in"></i></a> 
-            </span> 
-            <div class="form-group">
-                <label><input type="checkbox" name="terminos" id="cbox1" value="first_checkbox"> Recordarme </label><br>
-                </div>
-            </div> 
-            </div> 
-         
-        </div> 
-      </div> 
+        <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12" style="background-color: #967760; padding: 30px 40px; margin-top: 40px; margin-bottom: 40px;"> 
+
+            <label style="text-align: center;"><h3>Iniciar sesión</h3></label>
+    <?php if(isset($arrayDeErrores)) : ?>
+      <ul class="errores">
+        <?php foreach($arrayDeErrores as $error) : ?>
+          <li>
+            <?=$error?>
+          </li>
+        <?php endforeach;?>
+      </ul>
+    <?php endif; ?>
+    <form action="inicio-sesion.php" method="POST">
+      <div class="form-group">
+       
+        <input class="form-control" type="text" name="email" placeholder="email" />
+      </div>
+      <div class="form-group">
+      
+        <input class="form-control input-sm chat-input" type="password" name="password" placeholder="contraseña" />
+      </div>
+      <div class="form-group">
+        <a href="#" style="color: white; font-size:11px; "><p>Olvidé mi contraseña</p></a>
+      </div>
+      <div class="form-group" style="color: white;">
+         <input type="checkbox" name="recordame"> Recordar usuario
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-default" type="submit">Ingresar</button>
+      </div>
+       <div class="form-group">
+        <a href="registracion.php" style="color: white; font-size:11px; "><p>Crear cuenta</p></a>
+      </div>
+    </form>
+
+ 
     </div> 
 </div> 
       <?php require_once("footer.php"); ?>
