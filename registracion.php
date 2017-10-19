@@ -1,4 +1,3 @@
-
 <?php
   require_once("funciones.php");
 
@@ -41,19 +40,22 @@
       move_uploaded_file($archivo, $nombre);
 
       //Redirigir a la confirmacion
-      header("Location:confirmacion.php");exit;
+
+      loguear($_POST["email"]);
+      
+      header("Location:index.php");exit;
     }
   }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-	<title>Aisienta</title>
+  <title>Aisienta</title>
 </head>
 <body>
 <?php require_once "header.php";  ?>
@@ -104,4 +106,3 @@
       <?php require_once("footer.php"); ?>
 </body>
 </html>
-
