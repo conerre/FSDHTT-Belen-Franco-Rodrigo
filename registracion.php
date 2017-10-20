@@ -1,8 +1,9 @@
 <?php
-  require_once("funciones.php");
+require_once("funciones.php");
 
   if (estaLogueado()) {
-    header("Location:index.php");exit;
+    header("Location:index.php");
+    exit;
   }
 
 
