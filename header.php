@@ -31,7 +31,7 @@
            
               <a href="logout.php">Logout</a>
             
-              <a href="miperfil.php"> Hola <?=obtenerUsuarioLogueado()["nombre"] ?>
+              <a href="miperfil.php"> Hola <?= obtenerUsuarioLogueado()["Nombre"]; ?> </a>
            
           <?php endif; ?>
         
@@ -55,12 +55,12 @@
       <ul class="nav navbar-nav navbar-left">
         <li class=""><a href="construccion.php">Productos<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nosotros <span class="caret"></span></a>
+          <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nosotros <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Nuestra Historia</a></li>
-            <li><a href="#">Experiencias</a></li>
+            <li><a href="construccion.php">Nuestra Historia</a></li>
+            <li><a href="construccion.php">Experiencias</a></li>
             <li><a href="preguntas-frecuentes.php">Preguntas frecuentes</a></li>
-            <li><a href="#">¿Cómo realizar una compra?</a></li>
+            <li><a href="construccion.php">¿Cómo realizar una compra?</a></li>
             <li role="separator" class="divider"></li>
           </ul>
         </li>
@@ -68,18 +68,18 @@
 
       <ul class="nav navbar-nav navbar-left">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+          <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Exteriores</a></li>
-            <li><a href="#">Living</a></li>
-            <li><a href="#">Comedor</a></li>
-             <li><a href="#">Dormitorio</a></li>
-              <li><a href="#">Accesorio</a></li>
+            <li><a href="construccion.php">Exteriores</a></li>
+            <li><a href="construccion.php">Living</a></li>
+            <li><a href="construccion.php">Comedor</a></li>
+             <li><a href="construccion.php">Dormitorio</a></li>
+              <li><a href="construccion.php">Accesorio</a></li>
           </ul>
         </li>
         </ul>
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="#">Contacto</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
             
           </ul>
         <ul>

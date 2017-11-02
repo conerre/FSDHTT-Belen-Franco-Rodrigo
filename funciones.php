@@ -28,7 +28,7 @@
 			//El mail existe!!
 			$usuario = traerPorEmail($_POST["email"]);
 
-			if (password_verify($_POST["password"], $usuario["password"]) == false) {
+			if (password_verify($_POST["password"], $usuario["Password"]) == false) {
 				$arrayDeErrores["password"] = "La contraseña no verifica";
 			}
 		}
@@ -116,7 +116,7 @@
 		return [
 			"nombre" => $informacion["nombre"],
 			"email" => $informacion["email"],
-			"password" => password_hash($informacion["password"], PASSWORD_DEFAULT),
+			"password" => password_hash($informacion["password"], PASSWORD_DEFAULT)
 
 		];
 	}
@@ -125,6 +125,25 @@
 		$json = json_encode($usuario);
 		file_put_contents("usuarios.json", $json . PHP_EOL, FILE_APPEND);
 	}*/
+
+	
+
+	function sacarJson() {
+		$json=file_get_contents("usuarios.json", $json . PHP_EOL);
+		$usuarios= json_decode($json, true);
+		foreach ($usuarios as $usuario) {
+			$sql = 'Insert into Usuarios values (default, :nombre, :email, :password);';
+			$query = $conn->prepare($sql);
+
+			$query->bindValue(":nombre", $usuario["nombre"]);
+			$query->bindValue(":email", $usuario["email"]);
+			$query->bindValue(":password", $usuario["password"]);
+
+			$query->execute();
+
+		}
+	}
+
 
 	function guardarUsuario(&$usuario) {
 		global $conn;
@@ -147,7 +166,7 @@
 
 	function traerTodosLosUsuarios() {
 		global $conn;
-		$sql = "Select * from usuarios";
+		$sql = "Select * from Usuarios";
 
 		$query = $conn->prepare($sql);
 
@@ -158,15 +177,18 @@
 
 	function traerPorEmail($email) {
 		global $conn;
-		$sql = "Select * from usuarios where email = :email";
+		$registros;
 
-		$query = $conn->prepare($sql);
-
-		$query->bindValue(":email", $email);
-
-		$query->execute();
-
-		return $query->fetch(PDO::FETCH_ASSOC);
+		try{
+			$sql = "select * from Usuarios where Mail = :email;";
+			$query = $conn->prepare($sql);
+			$query->bindValue(":email", $email);
+			$query->execute();
+			$registros = $query->fetch(PDO::FETCH_ASSOC);
+		}catch(PDOException $Exception){
+			var_dump($Excecption);
+		}
+		return $registros;
 	}
 
 
@@ -199,7 +221,7 @@
 	function editarUsuario($usuario) {
 		global $conn;
 
-		$sql = "UPDATE usuarios set email = :email, nombre = :nombre, password = :password WHERE id = :id;";
+		$sql = "UPDATE Usuarios set Mail = :email, nombre = :nombre, password = :password WHERE id = :id;";
 
 		$query = $conn->prepare($sql);
 
