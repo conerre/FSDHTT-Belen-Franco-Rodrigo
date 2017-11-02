@@ -1,6 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
+CREATE DATABASE  IF NOT EXISTS `asientadb` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `asientadb`;
+-- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
--- Host: localhost    Database: asientadb
+-- Host: 127.0.0.1    Database: asientadb
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.1.26-MariaDB
 
@@ -16,55 +18,55 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `Clientes`
+-- Table structure for table `cliente`
 --
 
-DROP TABLE IF EXISTS `Clientes`;
+DROP TABLE IF EXISTS `cliente`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Clientes` (
-  `ID` int(11) DEFAULT NULL,
-  `Dni` int(11) DEFAULT NULL,
-  `Nombre` varchar(100) DEFAULT NULL,
-  `Apellido` varchar(100) DEFAULT NULL,
-  `Mail` varchar(100) DEFAULT NULL,
-  `Direccion_facturacion` varchar(100) DEFAULT NULL,
-  `Direccion_entrega` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `cliente` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) NOT NULL,
+  `apellido` varchar(2555) NOT NULL,
+  `dni` varchar(45) NOT NULL,
+  `clientecol` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Clientes`
+-- Dumping data for table `cliente`
 --
 
-LOCK TABLES `Clientes` WRITE;
-/*!40000 ALTER TABLE `Clientes` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Clientes` ENABLE KEYS */;
+LOCK TABLES `cliente` WRITE;
+/*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
+/*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `Usuarios`
+-- Table structure for table `usuarios`
 --
 
-DROP TABLE IF EXISTS `Usuarios`;
+DROP TABLE IF EXISTS `usuarios`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `Usuarios` (
-  `ID` int(11) DEFAULT NULL,
-  `Nombre` varchar(100) DEFAULT NULL,
-  `Mail` varchar(100) DEFAULT NULL,
-  `Password` char(40) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `Usuarios`
+-- Dumping data for table `usuarios`
 --
 
-LOCK TABLES `Usuarios` WRITE;
-/*!40000 ALTER TABLE `Usuarios` DISABLE KEYS */;
-INSERT INTO `Usuarios` VALUES (NULL,'malena','male@gmail.com','$2y$10$2mIqwUU19RLyNQqQMYs9F.PUQM3UiyqSH');
-/*!40000 ALTER TABLE `Usuarios` ENABLE KEYS */;
+LOCK TABLES `usuarios` WRITE;
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` VALUES (1,'Rodrigo','rodrigoelo@gmail.com','$2y$10$bTVYhVDxRLnZZkZWzecNBuUPDVQApTNmt6Fle0XhfJTyBG9l/M80u');
+/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -76,4 +78,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-02 14:51:36
+-- Dump completed on 2017-11-02 18:24:34
