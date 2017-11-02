@@ -10,10 +10,10 @@
 ?>
 
 <?php include("header.php"); ?>
-		<div class="jumbotron">Perfil de <?=$usuario["nombre"]?></div>
+		<div class="jumbotron">Perfil de <?=$usuario["Nombre"]?></div>
 		<ul>
-			<li>Nombre: <?=$usuario["nombre"]?> </li>
-			<li>Email: <?=$usuario["email"]?> </li>
+			<li>Nombre: <?=$usuario["Nombre"]?> </li>
+			<li>Email: <?=$usuario["Mail"]?> </li>
 		</ul>	
 				
 			

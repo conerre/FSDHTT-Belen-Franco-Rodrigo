@@ -42,7 +42,7 @@ require_once("funciones.php");
 
       //Redirigir a la confirmacion
 
-      loguear($_POST["email"]);
+     loguear($_POST["email"]);
       
       header("Location:index.php");exit;
     }

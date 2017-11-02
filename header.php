@@ -31,7 +31,7 @@
            
               <a href="logout.php">Logout</a>
             
-              <a href="miperfil.php"> Hola <?=obtenerUsuarioLogueado()["nombre"] ?>
+              <a href="miperfil.php"> Hola <?= obtenerUsuarioLogueado()["Nombre"]; ?> </a>
            
           <?php endif; ?>
         
