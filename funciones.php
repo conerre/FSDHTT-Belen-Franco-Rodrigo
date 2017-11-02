@@ -1,4 +1,10 @@
 <?php
+	$dsn = "mysql:host=localhost;port=3306;dbname=asientadb";
+	$user = "root";
+	$pass = "";
+
+	$conn = new PDO($dsn, $user, $pass);
+
 	session_start();
 
 	if (isset($_COOKIE["usuarioLogueado"]) && !estaLogueado()) {
@@ -68,6 +74,44 @@
 		return $arrayDeErrores;
 	}
 
+	/* VALIDAR EDICION*/
+
+	function validarEdicion($emailActual) {
+		$arrayDeErrores = [];
+
+		if ($_POST["nombre"] == "") {
+			$arrayDeErrores["nombre"] = "Debes completar el nombre.";
+		}
+
+		if ($_POST["email"] == "") {
+			$arrayDeErrores["email"] = "Falta rellenar el formato del email.";
+		}
+		else if(filter_var($_POST["email"],  FILTER_VALIDATE_EMAIL) == false) {
+			$arrayDeErrores["email"] = "El mail no existe.";	
+		}
+		else if (traerPorEmail($_POST["email"]) != null && $_POST["email"] != $emailActual) {
+			$arrayDeErrores["email"] = "Ya existe un usuario con este mail.";		
+		}
+
+		$usuario = traerPorEmail($emailActual);
+
+		if (password_verify($_POST["oldpassword"], $usuario["password"]) == false) {
+			$arrayDeErrores["password"] = "La contraseña anterior debe verificar.";
+		}
+
+
+		if (strlen($_POST["password"]) < 6) {
+			$arrayDeErrores["password"] = "La contraseña debe tener al menos 6 caracteres.";	
+		} 
+		else if ($_POST["password"] != $_POST["cpassword"]) {
+			$arrayDeErrores["password"] = "Las contraseñas deben ser iguales";
+		}
+
+		
+		return $arrayDeErrores;
+	}
+
+
 	function armarUsuario($informacion) {
 		return [
 			"nombre" => $informacion["nombre"],
@@ -76,47 +120,55 @@
 
 		];
 	}
-
+/* GUARDA USUARIO POR JSON
 	function guardarUsuario($usuario) {
 		$json = json_encode($usuario);
 		file_put_contents("usuarios.json", $json . PHP_EOL, FILE_APPEND);
+	}*/
+
+	function guardarUsuario(&$usuario) {
+		global $conn;
+
+
+		$sql = "Insert into Usuarios values (default, :nombre, :email, :password);";
+
+		$query = $conn->prepare($sql);
+
+		$query->bindValue(":nombre", $usuario["nombre"]);
+		$query->bindValue(":email", $usuario["email"]);
+		$query->bindValue(":password", $usuario["password"]);
+
+		$query->execute();
+
+		$usuario["id"] = $conn->lastInsertId();
 	}
 
+
+
 	function traerTodosLosUsuarios() {
-		$archivo = fopen("usuarios.json", "r");
+		global $conn;
+		$sql = "Select * from usuarios";
 
-		$linea = fgets($archivo);
+		$query = $conn->prepare($sql);
 
-		$usuarios = [];
+		$query->execute();
 
-		while($linea != false) {
-
-			$array = json_decode($linea, true);
-			$usuarios[] = $array;
-
-			$linea = fgets($archivo);
-		}
-
-		return $usuarios;
+		return $query->fetchAll(PDO::FETCH_ASSOC);
 	}
 
 	function traerPorEmail($email) {
-		$archivo = fopen("usuarios.json", "r");
+		global $conn;
+		$sql = "Select * from usuarios where email = :email";
 
-		$linea = fgets($archivo);
+		$query = $conn->prepare($sql);
 
-		while($linea != false) {
+		$query->bindValue(":email", $email);
 
-			$array = json_decode($linea, true);
-			
-			if ($array["email"] == $email) {
-				return $array;
-			}
-			$linea = fgets($archivo);
-		}
+		$query->execute();
 
-		return null;
+		return $query->fetch(PDO::FETCH_ASSOC);
 	}
+
 
 	function loguear($email) {
 		$_SESSION["usuarioLogueado"] = $email;
@@ -143,5 +195,19 @@
 		} else {
 			return null;
 		}
+	}
+	function editarUsuario($usuario) {
+		global $conn;
+
+		$sql = "UPDATE usuarios set email = :email, nombre = :nombre, password = :password WHERE id = :id;";
+
+		$query = $conn->prepare($sql);
+
+		$query->bindValue(":nombre", $_POST["nombre"]);
+		$query->bindValue(":email", $_POST["email"]);
+		$query->bindValue(":password", password_hash($_POST["password"], PASSWORD_DEFAULT));
+		$query->bindValue(":id", $usuario["id"]);
+		
+		$query->execute();
 	}
 ?>

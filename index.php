@@ -26,7 +26,7 @@
           <div class="item active">
               <img src="images/SLIDE5.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
-                <h2>Amuebla tu hogar</h2>
+                <h2></h2>
               </div>
           </div>
           <div class="item">

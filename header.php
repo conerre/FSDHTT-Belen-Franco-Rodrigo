@@ -31,7 +31,7 @@
            
               <a href="logout.php">Logout</a>
             
-              Hola <a href="miperfil.php"><?=obtenerUsuarioLogueado()["nombre"] ?>
+              <a href="miperfil.php"> Hola <?=obtenerUsuarioLogueado()["nombre"] ?>
            
           <?php endif; ?>
         
@@ -53,14 +53,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-left">
-        <li class=""><a href="#">Productos<span class="sr-only">(current)</span></a></li>
+        <li class=""><a href="construccion.php">Productos<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nosotros <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Contacto</a></li>
             <li><a href="#">Nuestra Historia</a></li>
             <li><a href="#">Experiencias</a></li>
-            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="preguntas-frecuentes.php">Preguntas frecuentes</a></li>
             <li><a href="#">¿Cómo realizar una compra?</a></li>
             <li role="separator" class="divider"></li>
           </ul>
@@ -76,8 +75,6 @@
             <li><a href="#">Comedor</a></li>
              <li><a href="#">Dormitorio</a></li>
               <li><a href="#">Accesorio</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Productos</a></li>
           </ul>
         </li>
         </ul>
