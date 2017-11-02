@@ -27,13 +27,17 @@
 		else {
 			//El mail existe!!
 			$usuario = traerPorEmail($_POST["email"]);
+			//var_dump($_POST["password"]);
+			//var_dump(password_hash($_POST["password"],PASSWORD_DEFAULT));
+			//var_dump($usuario['Password']);
 
-			if (password_verify($_POST["password"], $usuario["Password"]) == false) {
+			if (password_verify($_POST["password"], $usuario["password"]) == false) {
 				$arrayDeErrores["password"] = "La contraseña no verifica";
 			}
 		}
 
 		return $arrayDeErrores;
+		//var_dump($arrayDeErrores);
 	}
 
 	function validarInformacion() {
@@ -129,10 +133,10 @@
 	
 
 	function sacarJson() {
-		$json=file_get_contents("usuarios.json", $json . PHP_EOL);
+		$json=file_get_contents("usuarios.json");
 		$usuarios= json_decode($json, true);
 		foreach ($usuarios as $usuario) {
-			$sql = 'Insert into Usuarios values (default, :nombre, :email, :password);';
+			$sql = 'Insert into usuarios values (default, :nombre, :email, :password);';
 			$query = $conn->prepare($sql);
 
 			$query->bindValue(":nombre", $usuario["nombre"]);
@@ -145,11 +149,11 @@
 	}
 
 
-	function guardarUsuario(&$usuario) {
+	function guardarUsuario($usuario) {
 		global $conn;
 
 
-		$sql = "Insert into Usuarios values (default, :nombre, :email, :password);";
+		$sql = "Insert into usuarios values (default, :nombre, :email, :password);";
 
 		$query = $conn->prepare($sql);
 
@@ -166,7 +170,7 @@
 
 	function traerTodosLosUsuarios() {
 		global $conn;
-		$sql = "Select * from Usuarios";
+		$sql = "Select * from usuarios";
 
 		$query = $conn->prepare($sql);
 
@@ -180,7 +184,7 @@
 		$registros;
 
 		try{
-			$sql = "select * from Usuarios where Mail = :email;";
+			$sql = "select * from usuarios where email = :email;";
 			$query = $conn->prepare($sql);
 			$query->bindValue(":email", $email);
 			$query->execute();
@@ -221,7 +225,7 @@
 	function editarUsuario($usuario) {
 		global $conn;
 
-		$sql = "UPDATE Usuarios set Mail = :email, nombre = :nombre, password = :password WHERE id = :id;";
+		$sql = "UPDATE usuarios set email = :email, nombre = :nombre, password = :password WHERE id = :id;";
 
 		$query = $conn->prepare($sql);
 

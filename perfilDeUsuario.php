@@ -19,7 +19,7 @@
 			<li>Email: <?=$usuario["email"]?> </li>
 		</ul>	
 			<div class="form-group">
-			<a href="registracion2.php"> Editar perfil</a>
+			<a href="editar.php"> Editar perfil</a>
 			</div>
 		</div>
 	</div>

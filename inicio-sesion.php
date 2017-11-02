@@ -16,7 +16,7 @@
         setcookie("usuarioLogueado", $_POST["email"], time()+60*60*24*30);
       }
 
-      header("Location:perfilDeUsuario.php?email=" . $_POST["email"]);
+      header("Location:index.php");
     }
   }
 
