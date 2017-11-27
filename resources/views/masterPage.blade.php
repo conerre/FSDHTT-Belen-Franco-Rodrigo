@@ -12,15 +12,12 @@
          href="images/favicon.png">
    </head>
    <body>
-    <div class="wrapper">
       <header>
          <script src="https://use.fontawesome.com/c276b8a2b3.js"></script>
          <div class="nav-sesion text-right" style="padding-right: 15px;">
             @if(session('usuario'))
                Hola <a href="perfil">{{session('usuario')->name}}</a>
-               <form method="POST" action="{{ route('logout') }}">
-                  <input type="submit" name="logout" value="Logout" style="background-color: #967760; border-color: #333;">
-               </form>
+              <a href="logout">Logout</a>
             @endif 
             @if(!session('usuario'))
                <a href="register">Registración</a>
@@ -117,7 +114,6 @@
          </div>
          <h6 style="color: grey; margin-top: 30px;">Copyright &copy; 2017 {Asienta}</h6>
       </footer>
-      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    </body>

@@ -36,6 +36,12 @@ Route::get("/comoRealizarCompra", "MainController@aCRP");
 Route::get("/preguntasFrecuentes", "MainController@aPF");
 
 
+//Logout
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
+
+
 
 Route::get("/contacto", "MainController@aContacto");
 

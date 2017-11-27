@@ -5,17 +5,16 @@
 /*Para todo el body*/
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: url('../images/Fondos/background2.jpg');
-  height: 100%; 
-  background-attachment: fixed;
+  background-color: white;  
 }
 
-.wrapper{
-  background-color: white;
-}
 
   /*Inicio y registro top right*/
 
+.wrapper{
+    width: 1350px;
+    margin: 0 auto;
+}
 
 .nav-sesion a {
   color: white;
