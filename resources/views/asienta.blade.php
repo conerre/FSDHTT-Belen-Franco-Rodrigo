@@ -12,13 +12,13 @@
 
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-              <img src="images/SLIDE4.jpg" alt="algo" class="img-responsive">
+              <img src="images/SLIDE-A.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
-                <h2></h2>
+                <h2>VER BLACK FRIDAY</h2>
               </div>
           </div>
           <div class="item">
-              <img src="images/SLIDE3.jpg" alt="algo" class="img-responsive">
+              <img src="images/SLIDE-B.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
                 <h2></h2>
               </div>
