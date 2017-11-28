@@ -280,6 +280,7 @@ a {
 
 .search{
   border:none;
+  -webkit-box-shadow: none;
 }
 
 @media only screen and (max-width: 480px){
