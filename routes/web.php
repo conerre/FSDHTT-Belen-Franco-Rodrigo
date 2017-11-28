@@ -59,6 +59,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('producto', 'ProductoController');
 
-/producto, productocontoller@index
-/producto{id}, productocontoller@show
 
