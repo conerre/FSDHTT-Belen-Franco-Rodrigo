@@ -302,7 +302,6 @@ class ComposerStaticInit68d1173333b17486befddb52ebca58ae
 
     public static $classMap = array (
         'App\\Categoria' => __DIR__ . '/../..' . '/app/Categoria.php',
-        'App\\Categoría' => __DIR__ . '/../..' . '/app/Categoría.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -313,6 +312,7 @@ class ComposerStaticInit68d1173333b17486befddb52ebca58ae
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\MainController' => __DIR__ . '/../..' . '/app/Http/Controllers/MainController.php',
+        'App\\Http\\Controllers\\OrderController' => __DIR__ . '/../..' . '/app/Http/Controllers/OrderController.php',
         'App\\Http\\Controllers\\ProductoController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductoController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
