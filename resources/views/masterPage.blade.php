@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="css/estilos.css">
-      <link rel="stylesheet" type="text/css" href="css/animaciones.css">
+      <link rel="stylesheet" type="text/css" href="css/animaciones-y-random.css">
       <title>Asienta</title>
       <link rel="icon" 
          type="image/png" 
@@ -33,16 +33,16 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand text-light" href="/asienta"><img class="logo-nav" src="images/logo.png"></a>
+                  <a class="navbar-brand text-light" href="/"><img class="logo-nav" src="images/logo.png"></a>
                </div>
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-left">
                      <li class="dropdown">
                         <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nosotros <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                           <li><a href="/nuestraHistoria">Nuestra Historia</a></li>
-                           <li><a href="/experiencias">Experiencias</a></li>
-                           <li><a href="/preguntasFrecuentes">Preguntas frecuentes</a></li>
+                           <li><a href="nuestraHistoria">Nuestra Historia</a></li>
+                           <li><a href="experiencias">Experiencias</a></li>
+                           <li><a href="preguntasFrecuentes">Preguntas frecuentes</a></li>
                         </ul>
                      </li>
                   </ul>
@@ -62,24 +62,24 @@
                      <li><a href="/contacto">Contacto</a></li>
                   </ul>
                   <ul>
-                     <form class="navbar-form navbar-right">
+                     <form class="navbar-form navbar-right search">
                         <div class="form-group">
-                           <input type="text" class="form-control" placeholder="Búsqueda">
+                           <input type="text" class="form-control searcher" placeholder="Búsqueda">
                         </div>
-                        <button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <button type="submit" class="btn btn-defaul hidden-xs"><i class="fa fa-search hidden-xs" aria-hidden="true"></i></button>
                      </form>
                   </ul>
                </div>
             </div>
          </nav>
       </header>
-      <div>
+      <div class="wrapper">
       @yield("principal")
       </div>
       <footer>
          <div class="container-fluid">
             <div class="row">
-               <div class="p-4 col-md-4">
+               <div class="p-4 col-md-4 foot">
                   <h4 class="mb-4 text-white">Sitio</h4>
                   <ul class="list-unstyled">
                      <a href="index.php" class="text-white"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
@@ -89,7 +89,7 @@
                      <a href="/preguntasFrecuentes" class="text-white">Preguntas fecuentes</a>
                   </ul>
                </div>
-               <div class="p-4 col-md-4">
+               <div class="p-4 col-md-4 foot">
                   <h4 class="mb-4">Contacto</h4>
                   <p>
                      <a href="tel:+246 - 542 550 5462" class="text-white"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+549xxxxxxxxxx</a>
@@ -101,7 +101,7 @@
                      <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-white" target="blank"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Alguna dirección</a>
                   </p>
                </div>
-               <div class="p-4 col-md-4">
+               <div class="p-4 col-md-4 foot">
                   <h4 class="mb-4 text-light">Suscribite</h4>
                   <form>
                      <fieldset class="form-group text-white"> <label for="exampleInputEmail1">A nuestro newsletter</label>

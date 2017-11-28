@@ -9,7 +9,7 @@
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1- ¿Necesito tarjeta de crédito para realizar la compra?</a>
         </h4>
       </div>
-      <div id="collapse1" class="panel-collapse collapse in">
+      <div id="collapse1" class="panel-collapse collapse">
         <div class="panel-body">Podes realizar tu compra con tarjeta de credito como asi tambien con transferencia bancaria y pago contra entrega.</div>
       </div>
     </div>

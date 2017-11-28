@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px ) {
+@media only screen and (min-width: 1280px ) {
 /*Animaciones*/
 
 .dropdown .dropdown-menu {
@@ -34,4 +34,11 @@
 .grow img:hover {
   width: 100%;
   height: 100%;
+}
+
+
+/*Para estabilizar en compus grandes*/
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
 }

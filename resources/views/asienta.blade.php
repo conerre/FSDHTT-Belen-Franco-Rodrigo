@@ -38,10 +38,8 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </a>
 
-      </div>
-  </div>  
+      </div> 
 </div>
-<div class="container">
   <div class="row" id="categoria-imagen">
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail prd-img grow img">
@@ -64,9 +62,7 @@
   </div>
   <div class="row">
     <h4 id="productosDestacados">Productos destacados</h4>
-  </div>
-</div>  
-<div class="container">
+  </div>  
   <div class="row">
   <div class="col-sm-6 col-md-3 img-prod">
     <div class="thumbnail"">
@@ -111,6 +107,7 @@
         <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
+  </div>
   </div>
 </div>
 @endsection

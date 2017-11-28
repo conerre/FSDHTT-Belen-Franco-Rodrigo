@@ -36,27 +36,24 @@ Route::get("/comoRealizarCompra", "MainController@aCRP");
 Route::get("/preguntasFrecuentes", "MainController@aPF");
 
 
-//Logout
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
-
-
 
 
 Route::get("/contacto", "MainController@aContacto");
 
-Route::get("/asienta", "MainController@aAsienta");
+Route::get("/", "MainController@aAsienta");
 
+
+
+	//Para la masterPage (Mandar info de Usuarios, no utilizable)
 Route::get("/master", "MainController@aMaster");
 
-Route::get('/', function () {
-    return view('welcome');
-});
+	//Logout
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
+
+
+	//De Laravel
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

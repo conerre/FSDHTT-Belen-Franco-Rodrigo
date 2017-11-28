@@ -11,11 +11,6 @@ body {
 
   /*Inicio y registro top right*/
 
-.wrapper{
-    width: 1350px;
-    margin: 0 auto;
-}
-
 .nav-sesion a {
   color: white;
   padding: 7px;
@@ -260,23 +255,51 @@ a {
 
 /*PERFIL*/
 
-/* For mobile phones: */
+/* Mobile: */
 
-@media only screen and (max-width: 768px ) {
-    /* For tablets: */
+@media only screen and (max-width: 991px){
+    /* Tablets and stuff: */
+#productosDestacados {
+  width: 25%;
+}
 
+@media only screen and (max-width: 768px){
+
+.navbar-collapse{
+  position: absolute;
+  z-index: 30;
+  background-color: #565656;
+  width: 100%;
+}   
+
+.searcher{
+  width: 100%;
+  margin-left: -18px;
+  border: none; 
+}
+
+.search{
+  border:none;
+}
 
 @media only screen and (max-width: 480px){
-    /* For phones in landscape: */
-
+    /* Telefonos: */
+.foot{
+  margin-bottom: 60px;
+}    
+ 
 .jumbotron h4 {
-    width: 50%;
-    background-color: white; 
-    text-align: center;
+  width: 50%;
+  background-color: white; 
+  text-align: center;
+}
+
+#productosDestacados {
+    width: 26%;
 }
 
 @media only screen and (max-width: 320px) {
-    /* For phones in portrait: */
+    /* Portrait */
 .navbar-default .collapse li a {
     text-align: center;
 }
@@ -295,4 +318,6 @@ a {
   margin-top: 40px;
 }
 
-//ASDASD
+#productosDestacados {
+    width: 35%;
+}
