@@ -52,8 +52,17 @@ class RegisterController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
-    }
 
+         $mensajes = [
+        "required" => "El campo :attribute es requerido",
+        "min" => "El campo :attribute tiene un mínimo de :min",
+        "confirmed" => "Las contrasenas no coinciden"
+        ];
+
+        $this->validate($mensajes);
+}
+
+   
     /**
      * Create a new user instance after a valid registration.
      *

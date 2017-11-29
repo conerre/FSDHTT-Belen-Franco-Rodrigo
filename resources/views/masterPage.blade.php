@@ -45,7 +45,7 @@
                            <li><a href="preguntasFrecuentes">Preguntas frecuentes</a></li>
                         </ul>
                      </li>
-                  </ul>
+               </ul>
                   <ul class="nav navbar-nav navbar-left">
                      <li class="dropdown">
                         <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>

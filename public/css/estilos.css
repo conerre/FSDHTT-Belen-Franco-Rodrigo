@@ -263,6 +263,9 @@ a {
   width: 25%;
 }
 
+.foot{
+  margin-bottom: 60px;
+}   
 @media only screen and (max-width: 768px){
 
 .navbar-collapse{
@@ -283,11 +286,9 @@ a {
   -webkit-box-shadow: none;
 }
 
+
 @media only screen and (max-width: 480px){
-    /* Telefonos: */
-.foot{
-  margin-bottom: 60px;
-}    
+    /* Telefonos: */ 
  
 .jumbotron h4 {
   width: 50%;

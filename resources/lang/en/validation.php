@@ -105,6 +105,20 @@ return [
         ],
     ],
 
+    'custom' => [
+        'email' => [
+            'required' => 'El Email es requerido',
+            'unique' => 'Ya existe ese Email'
+        ],
+    ],
+
+    'custom' => [
+        'password' => [
+            'min' => 'numeric' => 'La contraseña debe ser de al mens :min caractéres',
+            'required' => 'La contraseña es requerida',
+            'confirmed' => 'Las contraseñas no coinciden',
+        ],
+    ],
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes
