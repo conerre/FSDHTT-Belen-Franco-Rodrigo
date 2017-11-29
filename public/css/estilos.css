@@ -77,13 +77,14 @@ body {
 }
 
 .nav-sesion {
-  background-color: #967760;
+  background-color: #a5a5a5;
   color: white;
 }
 
 
 
 /*Main*/
+
 
 #productosDestacados{
     font-size: 18px;
@@ -97,6 +98,22 @@ body {
 
 #categoria-imagen{
   margin-top: 30px;
+}
+
+.categoria-dormitorio{
+  display: block;
+  font-size: 20px;
+  background-color: #89a3b0;
+  color: black;
+  padding: 10px 5px;
+  margin: auto 0px;
+}
+
+.categoria-dormitorio a{
+  font-style: none;
+  color: white;
+  text-align: center;
+  margin: auto;
 }
 
 .prd-img{
@@ -250,7 +267,11 @@ a {
 
 /*LOGIN*/
 
+/*nuestraHistoria*/
 
+.historia {
+      padding: 60px 50px;
+  }
 
 
 /*PERFIL*/
@@ -322,4 +343,16 @@ a {
 
 #productosDestacados {
     width: 35%;
+}
+
+/*contacto*/
+
+.us h2 {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #9f8f68;
+    line-height: 24px;
+    margin-bottom: 20px;
 }

@@ -12,19 +12,19 @@
 
         <div class="carousel-inner" role="listbox">
           <div class="item active">
+              <img src="images/SLIDE-A.jpg" alt="algo" class="img-responsive">
+              <div class="carousel-caption">
+                <h2>VER BLACK FRIDAY</h2>
+              </div>
+          </div>
+          <div class="item">
+              <img src="images/SLIDE-B.jpg" alt="algo" class="img-responsive">
+              <div class="carousel-caption">
+                <h2></h2>
+              </div>
+          </div>
+          <div class="item">
               <img src="images/SLIDE5.jpg" alt="algo" class="img-responsive">
-              <div class="carousel-caption">
-                <h2></h2>
-              </div>
-          </div>
-          <div class="item">
-              <img src="images/SLIDE3.jpg" alt="algo" class="img-responsive">
-              <div class="carousel-caption">
-                <h2></h2>
-              </div>
-          </div>
-          <div class="item">
-              <img src="images/SLIDE4.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
                 <h2></h2>
               </div>
@@ -40,25 +40,25 @@
 
       </div> 
 </div>
-  <div class="row" id="categoria-imagen">
+   <div class="row" id="categoria-imagen">
     <div class="col-sm-6 col-md-4">
-      <div class="thumbnail prd-img grow img">
-        <a href="/asienta"><img src="images/categoria_dormitorio.jpg" alt="..."></a>
-        
+      <div class="categoria-dormitorio">
+        <a href="/asienta">// DORMITORIO</a>
       </div>
     </div>
-     <div class="col-sm-6 col-md-4">
-      <div class="thumbnail prd-img grow img">
-        <a href="/asienta"><img src="images/categoria_living.jpg" alt="..."></a>
-        
+
+      <div class="col-sm-6 col-md-4">
+      <div class="categoria-dormitorio">
+        <a href="/asienta">// EXTERIORES</a>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail prd-img grow img">
-        <a href="/asienta"><img src="images/categoria_comedor.jpg" alt="..."></a>
-        
+
+      <div class="col-sm-6 col-md-4">
+      <div class="categoria-dormitorio">
+        <a href="/asienta">// LIVING</a>
       </div>
     </div>
+  
   </div>
   <div class="row">
     <h4 id="productosDestacados">Productos destacados</h4>

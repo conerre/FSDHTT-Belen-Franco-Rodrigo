@@ -84,7 +84,7 @@ return [
     ],
     'string'               => 'The :attribute must be a string.',
     'timezone'             => 'The :attribute must be a valid zone.',
-    'unique'               => 'The :attribute has already been taken.',
+    'unique'               => 'The :attribute has already been taken',
     'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
 
@@ -100,8 +100,13 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'password' => [
+            'required' => 'El Email es requerido',
+            'confirmed' => 'Las contraseñas no coinciden',
+            'min' => 'La contraseña debe tener al menos :min caractéres',
+        ],
+        'email' => [
+            'unique' => 'El Email ya ha sido registrado'
         ],
     ],
 
