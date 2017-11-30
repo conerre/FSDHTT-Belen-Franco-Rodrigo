@@ -8,7 +8,7 @@
                 <label style="text-align: center;"><h3>Registración</h3></label>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" method="POST" action="/registrarAdmin">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('first_name') ? ' has-error' : '' }}">

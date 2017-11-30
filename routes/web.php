@@ -15,6 +15,11 @@
 
 //Páginas estáticas
 
+
+	//Admin
+Route::post("/registrarAdmin", "AdminController@storeAdmin");
+Route::get("/registrarAdmin", "AdminController@addAdmin");
+
 	//Categorías
 Route::get("/accesorio", "MainController@aExp");
 

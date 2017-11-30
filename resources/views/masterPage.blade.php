@@ -16,7 +16,7 @@
          <script src="https://use.fontawesome.com/c276b8a2b3.js"></script>
          <div class="nav-sesion text-right" style="padding-right: 15px;">
             @if(session('usuario'))
-               Hola <a href="perfil">{{session('usuario')->name}}</a>
+               Hola <a href="perfil">{{session('usuario')->first_name}}</a>
               <a href="logout">Logout</a>
             @endif 
             @if(!session('usuario'))
