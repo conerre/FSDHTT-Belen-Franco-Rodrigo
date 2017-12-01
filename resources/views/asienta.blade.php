@@ -14,7 +14,7 @@
           <div class="item active">
               <img src="images/SLIDE-A.jpg" alt="algo" class="img-responsive">
               <div class="carousel-caption">
-                <h2>VER BLACK FRIDAY</h2>
+                <a href="#" class="btn btn-info" role="button">Ver Black Friday Sale</a>
               </div>
           </div>
           <div class="item">
@@ -40,26 +40,13 @@
 
       </div> 
 </div>
-   <div class="row" id="categoria-imagen">
-    <div class="col-sm-6 col-md-4">
-      <div class="categoria-dormitorio">
-        <a href="/asienta">// DORMITORIO</a>
-      </div>
-    </div>
 
-      <div class="col-sm-6 col-md-4">
-      <div class="categoria-dormitorio">
-        <a href="/asienta">// EXTERIORES</a>
-      </div>
-    </div>
-
-      <div class="col-sm-6 col-md-4">
-      <div class="categoria-dormitorio">
-        <a href="/asienta">// LIVING</a>
-      </div>
-    </div>
-  
+  <div class="btn-group btn-group-justified botones-categoria">
+    <a href="#" class="btn">Dormitorio</a>
+    <a href="#" class="btn">Exteriores</a>
+    <a href="#" class="btn">Living</a>
   </div>
+
   <div class="row">
     <h4 id="productosDestacados">Productos destacados</h4>
   </div>  

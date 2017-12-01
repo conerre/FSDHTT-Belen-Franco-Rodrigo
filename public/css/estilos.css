@@ -81,10 +81,22 @@ body {
   color: white;
 }
 
+/*Categorias*/
+
+.botones-categoria {
+    margin-top: 20px;
+}
+
+.botones-categoria a{
+    background-color: black;
+    color: white;
+    margin: 10px;
+    border-color: white;
+    border: 5px;
+}
 
 
 /*Main*/
-
 
 #productosDestacados{
     font-size: 18px;
