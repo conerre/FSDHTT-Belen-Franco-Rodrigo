@@ -1,4 +1,4 @@
-living.blade.php@extends("masterPage")
+@extends("masterPage")
 @section("principal")
 Living
 @endsection

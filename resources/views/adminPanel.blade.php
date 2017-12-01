@@ -1,4 +1,4 @@
 @extends("masterPage")
 @section("principal")
-Producto
+Admin panel
 @endsection
