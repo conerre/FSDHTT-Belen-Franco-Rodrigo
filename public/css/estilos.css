@@ -244,6 +244,11 @@ a {
 
 /*PREGUNTAS FRECUENTES*/
 
+.preguntasFrecuentesContainer{
+  width: 100%;
+  margin: 12.5% 0;
+}
+
 .preguntas{
   font-size: 18px;
   color: brown;
@@ -264,26 +269,50 @@ a {
 
 /*REGISTRO*/
 
-.registration {
-  background-color: #967760;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 90%;
-  border: 3px solid white;
-  padding: 15px;
-  color: white;
+
+.panelRegistro{
+  background-color: #a5a5a5; 
+  padding: 30px; 
+  box-shadow: 10px 10px 5px #565656;
 }
+
+.registroContainer{
+  margin: 5% 0;
+}
+
+
 
 
 
 /*LOGIN*/
 
-/*nuestraHistoria*/
+.panelLogin{
+  background-color: #a5a5a5; 
+  padding: 30px; 
+  box-shadow: 10px 10px 5px #565656;
+}
+
+.loginContainer{
+  margin: 9% 0;
+}
+
+
+
+
+
+
+/*Nuestra Historia*/
 
 .historia {
       padding: 60px 50px;
+      margin: 6.5% 0;
   }
+
+
+
+
+
+
 
 
 /*PERFIL*/
@@ -299,7 +328,7 @@ a {
 .foot{
   margin-bottom: 60px;
 }   
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 
 .navbar-collapse{
   position: absolute;

@@ -1,6 +1,6 @@
 @extends("masterPage")
 @section("principal")
-<div class="container">
+<div class="container preguntasFrecuentesContainer">
   <h2>Preguntas frecuentes</h2>
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
@@ -55,5 +55,4 @@
     </div>
   </div> 
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 @endsection

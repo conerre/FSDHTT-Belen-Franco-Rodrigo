@@ -1,10 +1,10 @@
 @extends('masterPage')
 
 @section('principal')
-<div class="container">
+<div class="container loginContainer">
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
-            <div class="panel panel-default" style="background-color: #a5a5a5; padding: 30px; margin-top: 90px; margin-bottom: 65px; box-shadow: 10px 10px 5px #565656;">
+            <div class="panel panel-default panelLogin">
                 <label style="text-align: center;"><h3>Iniciar Sesión</h3></label>
 
                 <div class="panel-body">
@@ -43,7 +43,7 @@
                             <div class="col-md-12">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordáme
                                     </label>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}" style="color: #e7e7e7">
-                                    Forgot Your Password?
+                                    Te olvidaste tu contraseña?
                                 </a>
                             </div>
                         </div>
@@ -66,6 +66,5 @@
         </div>
     </div>
 </div>
-<br><br><br><br><br><br><br>
 @endsection
 
