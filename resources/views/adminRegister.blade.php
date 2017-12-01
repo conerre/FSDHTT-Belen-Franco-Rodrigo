@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <div class="panel panel-default" style="background-color: #a5a5a5; padding: 30px; margin-top: 90px; margin-bottom: 25px; box-shadow: 10px 10px 5px #565656;">
-                <label style="text-align: center;"><h3>Registración</h3></label>
+                <label style="text-align: center;"><h3>Registración de Admin</h3></label>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="/registrarAdmin">
@@ -88,6 +88,6 @@
         </div>
     </div>
 </div>
-<br><br><br><br><br><br>
+<br><br><br><br>
 @endsection
 

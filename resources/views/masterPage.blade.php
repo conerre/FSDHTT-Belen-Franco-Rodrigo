@@ -15,10 +15,14 @@
       <header>
          <script src="https://use.fontawesome.com/c276b8a2b3.js"></script>
          <div class="nav-sesion text-right" style="padding-right: 15px;">
-            @if(session('usuario'))
+            @if(session('usuario') and session('usuario')->type==1)
                Hola <a href="perfil">{{session('usuario')->first_name}}</a>
               <a href="logout">Logout</a>
-            @endif 
+            @endif
+            @if(session('usuario') and session('usuario')->type==2)
+               Hola <a href="perfil">Admin {{session('usuario')->first_name}}</a>
+              <a href="logout">Logout</a>
+            @endif  
             @if(!session('usuario'))
                <a href="register">Registración</a>
                <a href="login">Login</a>
