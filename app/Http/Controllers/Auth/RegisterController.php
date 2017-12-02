@@ -6,6 +6,7 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class RegisterController extends Controller
 {
@@ -72,4 +73,9 @@ class RegisterController extends Controller
             'type' => 1
         ]);
     }
+
+    //Crea un mensaje flash en session
+    public function authenticated($request){
+        session()->flash('mensaje', 'Gracias por registrarse!');
+    } 
 }

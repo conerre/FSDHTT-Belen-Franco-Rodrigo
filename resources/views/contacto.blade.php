@@ -1,7 +1,6 @@
 @extends("masterPage")
 @section("principal")
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid contactoContainer">
   <h2 class="us">CONTACTO</h2>
   <div class="row">
     <div class="col-sm-5">

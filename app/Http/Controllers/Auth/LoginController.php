@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Request;
+use App\User;
 
 class LoginController extends Controller
 {
@@ -40,5 +40,9 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    //Crea un mensaje flash en session
+    public function authenticated($request, $user){
+        session()->flash('mensaje', 'Bienvenido de nuevo' . " " . $user->first_name . '!');
+    }    
 
 }

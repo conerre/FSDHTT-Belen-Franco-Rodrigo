@@ -301,7 +301,7 @@ a {
 
 
 
-/*Nuestra Historia*/
+/*NUESTRA HISTORIA*/
 
 .historia {
       padding: 60px 50px;
@@ -309,15 +309,36 @@ a {
   }
 
 
+/*CONTACTO*/
+
+.contactoContainer{
+  margin: 12.5% 5%;
+}
 
 
+/*NOTIFICACIONES*/
+.notificacion{
+  position: fixed;
+  z-index: 1;
+  margin-left: 72%;
+  margin-top: 42%;
+  animation: notification 4s forwards;
+}
 
-
-
+@keyframes notification {
+    0%   {opacity: 1;}
+    100% {opacity: 0; display:none;}
+}
 
 /*PERFIL*/
 
-/* Mobile: */
+
+
+
+
+
+
+/* MOBILE */
 
 @media only screen and (max-width: 991px){
     /* Tablets and stuff: */

@@ -1,6 +1,14 @@
 @extends("masterPage")
 @section("principal")
 <div class="container">
+
+{{-- Notifica al usuario de su logeo --}}
+  @if (session()->has('mensaje'))
+    <div class="alert alert-success notificacion" role="alert">
+      {{session('mensaje')}}
+    </div>
+  @endif
+
   <div class="row hidden-xs hidden-sm">
       <div id="my-slider" class="carousel slide" data-ride="carousel">
 

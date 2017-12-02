@@ -1,6 +1,5 @@
 @extends("masterPage")
 @section("principal")
-<!-- Container (About Section) -->
 <div id="about" class="container-fluid historia">
   <div class="row">
     <div class="col-sm-8 col-md-10">
