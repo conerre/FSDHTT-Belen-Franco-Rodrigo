@@ -1,4 +1,4 @@
-comedor.blade.php@extends("masterPage")
+@extends("masterPage")
 @section("principal")
 Comedor
 @endsection

@@ -6,9 +6,8 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
-class RegisterController extends Controller
+class RegisterAdminController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -70,12 +69,7 @@ class RegisterController extends Controller
             'last_name' => $data['last_name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'type' => 1
+            'type' => 2
         ]);
     }
-
-    //Crea un mensaje flash en session
-    public function authenticated($request){
-        session()->flash('mensaje', 'Gracias por registrarse!');
-    } 
 }

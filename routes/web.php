@@ -17,8 +17,8 @@
 
 
 	//Admin
-Route::post("/registrarAdmin", "AdminController@storeAdmin");
-Route::get("/registrarAdmin", "AdminController@addAdmin");
+Route::get("/adminPanel", "AdminController@panel");
+Route::get("/registerAdmin", "AdminController@addAdmin");
 
 	//Categorías
 Route::get("/accesorio", "MainController@aExp");
@@ -59,8 +59,6 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 	//De Laravel
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('producto', 'ProductoController');
 
