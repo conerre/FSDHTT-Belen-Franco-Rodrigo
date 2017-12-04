@@ -506,7 +506,9 @@ a {
 /*CONTACTO*/
 
 .contactoContainer{
-  margin: 12.5% 5%;
+    margin: 8.5% 4%;
+    padding: 3%;
+    background-color: #f2f2f2;
 }
 
 
