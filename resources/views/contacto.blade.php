@@ -4,7 +4,7 @@
   <h2 class="us">CONTACTO</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p>Envianos un mensaje y nos pondremos en contacto.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Bs As, Arg.</p>
       <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span> info@asienta.com</p>

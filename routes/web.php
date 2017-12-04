@@ -60,7 +60,11 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 	//De Laravel
 Auth::routes();
 
-Route::resource('producto', 'ProductoController');
+//Route::resource('producto', 'ProductoController');
+
+Route::get('/producto', function () {
+   return view('producto');
+});
 
 //producto, productocontoller@index
 //producto{id}, productocontoller@show
