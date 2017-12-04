@@ -320,8 +320,6 @@ a {
 .notificacion{
   position: fixed;
   z-index: 1;
-  margin-left: 72%;
-  margin-top: 42%;
   animation: notification 4s forwards;
 }
 

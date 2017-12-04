@@ -2,7 +2,6 @@
 @section("principal")
 <div class="container">
 
-{{-- Notifica al usuario de su logeo --}}
   @if (session()->has('mensaje'))
     <div class="alert alert-success notificacion" role="alert">
       {{session('mensaje')}}
