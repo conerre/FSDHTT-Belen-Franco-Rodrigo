@@ -7,37 +7,44 @@
         <ol class="carousel-indicators">
             <li data-target="#my-slider" data-slide-to="0" class="active"></li>
             <li data-target="#my-slider" data-slide-to="1"></li>
-            <li data-target="#my-slider" data-slide-to="2"></li>
         </ol>
 
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-              <img src="images/SLIDE-A.jpg" alt="algo" class="img-responsive">
+              <img src="images/SLIDE1.jpg" alt="algo" class="img-responsive">
+              <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                              <div class="titulo-slide1">_ <br> BLACK FRIDAY EN ASIENTA</div>
+                            </h2>
+                            <br>
+                            <h3>
+                              <div class="subtitulo-slide1"> Disfrutá de los mejores descuentos comprando on-line. </div>
+                            </h3>
+                          
+                        </div>
+                    </div>
               <div class="carousel-caption">
                 <a href="#" class="btn btn-info" role="button">Ver Black Friday Sale</a>
               </div>
           </div>
           <div class="item">
-              <img src="images/SLIDE-B.jpg" alt="algo" class="img-responsive">
-              <div class="carousel-caption">
-                <h2></h2>
-              </div>
-          </div>
-          <div class="item">
-              <img src="images/SLIDE5.jpg" alt="algo" class="img-responsive">
-              <div class="carousel-caption">
-                <h2></h2>
-              </div>
-          </div>
+              <img src="images/SLIDE2.jpg" alt="algo" class="img-responsive">
+              <div class="header-text hidden-xs">
+                        <div class="col-md-4 text-left">
+                            <h2>
+                              <div class="titulo-slide2">_ <br> REPOSERAS <br>TERRAZO <br>FIBRA <br> </div>
+                            </h2>
+                            <br>
+                            <h3>
+                              <div class="subtitulo-slide2"> Reposera de madera maciza jatobá con terminación ecoblindaje. Con fibra sintética simil ratán de polietileno. Resistente a los rayos solares y humedad. Acción insecticida y funguicida. </div>
+                            </h3>
+                            <a href="#" class="btn btn-info btn-lg btn-comprar" role="button">COMPRAR</a>
+                            <br>
+                        </div>
+                    </div>
+           </div>
         </div>
-
-        <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        </a>
-        <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </a>
-
       </div> 
 </div>
 

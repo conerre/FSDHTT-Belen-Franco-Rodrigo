@@ -95,6 +95,79 @@ body {
     border: 5px;
 }
 
+/*Slide*/
+
+.btn-comprar{
+  margin-left: 15%;
+}
+
+.titulo-slide2{
+ font-size: 67px;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 15%;
+  margin-top: -35%;
+}
+
+.titulo-slide1{
+  font-size: 67px;
+  font-weight: 900;
+  margin-top: -12%;
+}
+.subtitulo-slide1{
+  margin-top: -3%;
+}
+
+.subtitulo-slide2{
+  margin-left: 15%;
+}
+
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: black;
+}
+
+.carousel-caption .btn {
+    font-size: 20px;
+}
+
+.carousel-indicators {
+    bottom: 0px;
+    }
+
+.carousel-caption{
+  padding-bottom: 5px;
+}
+
+.btn-info:hover {
+    background-color: black;
+    border-color: black;
+}
+
+.btn-info {
+    background-color: black;
+    border-color: black;
+}
+
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: 0px;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: 0px;
+}
+
+.carousel-control.left {
+     background-image: none;
+     }
+
+.carousel-control.right {
+     background-image: none;
+     }
 
 /*Main*/
 
@@ -291,6 +364,8 @@ a {
 /* Mobile: */
 
 @media only screen and (max-width: 991px){
+    
+
     /* Tablets and stuff: */
 #productosDestacados {
   width: 25%;
@@ -355,6 +430,16 @@ a {
 
 #productosDestacados {
     width: 35%;
+}
+
+/*slide*/
+
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -90px;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: -90px;
 }
 
 /*contacto*/
