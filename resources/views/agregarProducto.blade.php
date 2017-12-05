@@ -12,13 +12,13 @@
 	    </div>
 	@endif
 <br>	
-  <form class="" action="/agregarPelicula" method="post">
+  <form class="" action="/agregarProducto" method="post">
     {{ csrf_field() }}
     <div class="form-group">
     <h3>Nombre:</h3> <input class="form-control addPControl" type="text" name="name" value="{{old("name")}}">
     </div>
     <div class="form-group">
-    <h3>Código de artículo:</h3> <input class="form-control addPControl" type="text" name="articleName" value="{{old("articleName")}}">
+    <h3>Código de artículo:</h3> <input class="form-control addPControl" type="text" name="article_code" value="{{old("article_code")}}">
     </div>
     <div class="form-group">
     <h3>Precio:</h3> <input class="form-control addPControl" type="number" name="price" value="{{old("price")}}">
@@ -30,7 +30,7 @@
     <h3>Descripción:</h3> <input class="form-control addPControl" type="text" name="description" value="{{old("description")}}">
     </div>
     <h3>Categoría:</h3>
-    <select class="form-control" name="genero">
+    <select class="form-control" name="category">
         @foreach($categories as $category)
           @if ($category->id == old("category"))
             <option value="{{$category->id}}" selected>
@@ -42,7 +42,9 @@
             </option>
           @endif
         @endforeach
-      </select>
-	
+      </select> <br>
+	 <div class="form-group">
+      <input type="submit" class="btn btn-success" value="Agregar Producto">
+  </div>
   </form>
 @endsection

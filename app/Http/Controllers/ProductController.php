@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Product;
 
 class ProductController extends Controller
 {
@@ -14,17 +15,19 @@ class ProductController extends Controller
     }
 
       public function add(){
-    	return view("agregarProducto");
+      $categories = Category::all();
+      $VAC = compact("categories");
+    	return view("agregarProducto", $VAC);
     }
 
      public function save(Request $request) {
 
       $reglas = [
           "name" => "required|string",
-          "price" => "required|integer|min:0",
+          "price" => "required|numeric|min:0",
           "stock" =>  "required|numeric|min:0",
           "description" => "required|string",
-          "category_id" => "required|integer",
+          "article_code" => "required|string",
       ];
 
       $mensajes = [
@@ -37,13 +40,21 @@ class ProductController extends Controller
       $producto = new Product();
 
       $producto->name = $request["name"];
-      $producto->price = $request["premios"];
-      $producto->stock = $request["duracion"];
+      $producto->price = $request["price"];
+      $producto->stock = $request["stock"];
       $producto->description = $request["description"];
-      $producto->category_id = $request["cateogry"];
+      $producto->article_code = $request["article_code"];
+      $producto->category_id = $request["category"];
+
 
       $producto->save();
 
-      return redirect("/productos");
+      return redirect("/agregarProducto");
+    }
+
+      public function todos(){
+      $products = Product::all();
+      $VAC = compact("products");
+      return view("productosAdmin", $VAC);
     }
 }
