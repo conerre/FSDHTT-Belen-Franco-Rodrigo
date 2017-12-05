@@ -5,11 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use App\User;
+use App\Category;
 
 class MainController extends Controller
 {
-    public function aAsienta(){
-    	return view("asienta");
+    public function aAsienta(Request $request){
+        return view("asienta");
     }
 
     public function aContacto(){
@@ -21,45 +22,20 @@ class MainController extends Controller
     }
 
     //Nosotros
-    public function aExp(){
+    public function aExperiencias(){
     	return view("experiencias");
     }
 
-    public function aNH(){
+    public function aNuestraHistoria(){
     	return view("nuestraHistoria");
     }
 
-    public function aCRP(){
+    public function aComoRealizarCompra(){
     	return view("comoRealizarCompra");
     }
 
-    public function aPF(){
+    public function aPreguntasFrecuentes(){
     	return view("preguntasFrecuentes");
     }
-
-    //Categorías
-    public function aAcces(){
-        return view("accesorio");
-    }
-
-    public function aDorm(){
-        return view("dormitorio");
-    }
-
-    public function aComdeor(){
-        return view("comedor");
-    }
-
-    public function aLiving(){
-        return view("living");
-    }
-
-    public function aExt(){
-        return view("exteriores");
-    }
-
-    public function aMaster(){
-        return view("masterPage");
-    }
-
+    
 }

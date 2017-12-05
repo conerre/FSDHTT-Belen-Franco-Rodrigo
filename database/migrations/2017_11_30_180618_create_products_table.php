@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->decimal('price')->unsigned();
             $table->integer('stock')->unsigned();
             $table->text('description')->nullable();
+            $table->
             $table->timestamps();
         });
     }

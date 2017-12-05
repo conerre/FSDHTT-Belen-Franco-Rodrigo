@@ -1,3 +1,0 @@
-@section("principal")
-Dormitorio
-@endsection

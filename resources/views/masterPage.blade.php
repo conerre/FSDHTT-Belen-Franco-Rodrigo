@@ -4,11 +4,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="css/estilos.css">
-      <link rel="stylesheet" type="text/css" href="css/animaciones-y-random.css">
+      <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+      <link rel="stylesheet" type="text/css" href="../css/animaciones-y-random.css">
       <title>Asienta</title>
-      <link rel="icon" 
-         type="image/png" 
+      <link rel="icon" type="image/png" 
          href="images/favicon.png">
    </head>
    <body>
@@ -39,16 +38,16 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand text-light" href="/"><img class="logo-nav" src="images/logo.png"></a>
+                  <a class="navbar-brand text-light" href="/"><img class="logo-nav" src="../images/logo.png"></a>
                </div>
                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-left">
                      <li class="dropdown">
                         <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nosotros <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                           <li><a href="nuestraHistoria">Nuestra Historia</a></li>
-                           <li><a href="experiencias">Experiencias</a></li>
-                           <li><a href="preguntasFrecuentes">Preguntas frecuentes</a></li>
+                           <li><a href="/nuestraHistoria">Nuestra Historia</a></li>
+                           <li><a href="/experiencias">Experiencias</a></li>
+                           <li><a href="/preguntasFrecuentes">Preguntas frecuentes</a></li>
                         </ul>
                      </li>
                </ul>
@@ -56,11 +55,9 @@
                      <li class="dropdown">
                         <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                           <li><a href="/exteriores">Exteriores</a></li>
-                           <li><a href="/living">Living</a></li>
-                           <li><a href="/comedor">Comedor</a></li>
-                           <li><a href="/dormitorio">Dormitorio</a></li>
-                           <li><a href="/accesorio">Accesorio</a></li>
+                           @foreach(Request::get('categories')  as $category)
+                              <li><a href="/categoría/{{$category->id}}">{{$category->name}}</a></li>
+                           @endforeach
                         </ul>
                      </li>
                   </ul>

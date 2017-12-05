@@ -20,25 +20,26 @@
 Route::get("/adminPanel", "AdminController@panel");
 Route::get("/registerAdmin", "AdminController@addAdmin")->middleware('admin');
 
+	//Productos	
+Route::get("/productos", "ProductController@allP");
+Route::get("/producto/{id}", "ProductController@show");
+Route::get("/agregarProducto", "ProductController@add");
+Route::post("/agregarProducto", "ProductController@save");
+Route::get("/editarProducto", "ProductController@edit");
+Route::put("/editarProducto", "ProductController@update");
+
 	//Categorías
-Route::get("/accesorio", "MainController@aExp");
+Route::get("/categoría/{id}", "CategoryController@showCategory");
 
-Route::get("/dormitorio", "MainController@aExp");
-
-Route::get("/comedor", "MainController@aExp");
-
-Route::get("/living", "MainController@aExp");
-
-Route::get("/exteriores", "MainController@aExp");
 
 	//Nosotros
-Route::get("/experiencias", "MainController@aExp");
+Route::get("/experiencias", "MainController@aExperiencias");
 
-Route::get("/nuestraHistoria", "MainController@aNH");
+Route::get("/nuestraHistoria", "MainController@aNuestraHistoria");
 
-Route::get("/comoRealizarCompra", "MainController@aCRP");
+Route::get("/comoRealizarCompra", "MainController@aComoRealizarCompra");
 
-Route::get("/preguntasFrecuentes", "MainController@aPF");
+Route::get("/preguntasFrecuentes", "MainController@aPreguntasFrecuentes");
 
 
 
@@ -47,24 +48,8 @@ Route::get("/contacto", "MainController@aContacto");
 
 Route::get("/", "MainController@aAsienta");
 
-
-
-	//Para la masterPage (Mandar info de Usuarios, no utilizable)
-Route::get("/master", "MainController@aMaster");
-
 	//Logout
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
-
-
-	//De Laravel
-Auth::routes();
-
-//Route::resource('producto', 'ProductoController');
-
-Route::get('/producto', function () {
-   return view('producto');
-});
 
 //producto, productocontoller@index
 //producto{id}, productocontoller@show
