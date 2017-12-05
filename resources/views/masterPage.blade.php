@@ -21,6 +21,7 @@
             @endif
             @if(session('usuario') and session('usuario')->type==2)
                Hola <a href="perfil">Admin {{session('usuario')->first_name}}</a>
+               
                <a href="adminPanel">Panel</a>
               <a href="logout">Logout</a>
             @endif  
@@ -121,5 +122,6 @@
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/producto.js"></script>
    </body>
 </html>
