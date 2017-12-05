@@ -43,6 +43,8 @@ Route::get("/preguntasFrecuentes", "MainController@aPreguntasFrecuentes");
 
 Route::get("/comentarios", "MainController@aComentarios");
 
+Route::get("/producto", "MainController@aProducto");
+
 Route::get("/carrito", "MainController@aCarrito");
 
 Route::get("/perfil", "MainController@aPerfil");

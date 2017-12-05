@@ -56,9 +56,11 @@
 </div>
 
   <div class="btn-group btn-group-justified botones-categoria">
-    <a href="#" class="btn">Dormitorio</a>
-    <a href="#" class="btn">Exteriores</a>
-    <a href="#" class="btn">Living</a>
+    <a href="#" class="btn">Mesas</a>
+    <a href="#" class="btn">Sillas</a>
+    <a href="#" class="btn">Reposeras</a>
+    <a href="#" class="btn">Sillones</a>
+    
   </div>
 
   <div class="row">

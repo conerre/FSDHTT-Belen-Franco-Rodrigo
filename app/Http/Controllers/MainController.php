@@ -38,6 +38,10 @@ class MainController extends Controller
     	return view("preguntasFrecuentes");
     }
 
+    public function aProducto(){
+        return view("producto");
+    }
+
     public function aComentarios(){
         return view("comentarios");
     }
