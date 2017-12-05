@@ -528,8 +528,21 @@ a {
 
 /*PERFIL*/
 
+.perfilUsuario {
+  /*background-color: #88888875;
+  margin: 8.5% 4%;*/
+  padding: 3%;
+  
+}
 
-
+.tital{ 
+  font-size:16px; 
+  font-weight:500;
+}
+.bot-border{ 
+  border-bottom:1px #f8f8f8 solid;  
+  margin:5px 0  5px 0
+}
 
 
 

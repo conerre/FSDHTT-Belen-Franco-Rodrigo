@@ -21,6 +21,7 @@
             @endif
             @if(session('usuario') and session('usuario')->type==2)
                Hola <a href="perfil">Admin {{session('usuario')->first_name}}</a>
+               
                <a href="adminPanel">Panel</a>
               <a href="logout">Logout</a>
             @endif  
