@@ -18,7 +18,7 @@
 
 	//Admin
 Route::get("/adminPanel", "AdminController@panel");
-Route::get("/registerAdmin", "AdminController@addAdmin");
+Route::get("/registerAdmin", "AdminController@addAdmin")->middleware('admin');
 
 	//Categorías
 Route::get("/accesorio", "MainController@aExp");
