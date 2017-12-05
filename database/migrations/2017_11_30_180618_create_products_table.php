@@ -17,10 +17,10 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->tinyInteger('category_id')->refrences('id')->on('categories');
             $table->string('name');
-            $table->decimal('price')->unsigned();
+            $table->float('price')->unsigned();
             $table->integer('stock')->unsigned();
-            $table->text('description')->nullable();
-            $table->
+            $table->text('description');
+            $table->string('article_code');
             $table->timestamps();
         });
     }

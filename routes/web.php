@@ -17,14 +17,14 @@
 
 
 	//Admin
-Route::get("/adminPanel", "AdminController@panel");
+Route::get("/adminPanel", "AdminController@panel")->middleware('admin');
 Route::get("/registerAdmin", "AdminController@addAdmin")->middleware('admin');
+Route::get("/agregarProducto", "ProductController@add")->middleware('admin');
+Route::post("/agregarProducto", "ProductController@save");
 
 	//Productos	
-Route::get("/productos", "ProductController@allP");
+Route::get("/productos", "ProductController@todos")->middleware('admin');
 Route::get("/producto/{id}", "ProductController@show");
-Route::get("/agregarProducto", "ProductController@add");
-Route::post("/agregarProducto", "ProductController@save");
 Route::get("/editarProducto", "ProductController@edit");
 Route::put("/editarProducto", "ProductController@update");
 
@@ -58,3 +58,4 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 //producto, productocontoller@index
 //producto{id}, productocontoller@show
 
+Auth::routes();

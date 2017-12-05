@@ -49,6 +49,7 @@
                     <div class="descripcion-producto">
                         <p>
                             <small>
+                                {{Pproducto->description}}
                             Banco de madera maciza de grapia de alta densidad. Acabado Ecoblindaje, resistencia a la intemperie. Base de acero al carbono para fijarlo al piso. Ideal halls de entrada. Peso: 84 kgs. 
                             Unidades de venta: 1
                             </small>
