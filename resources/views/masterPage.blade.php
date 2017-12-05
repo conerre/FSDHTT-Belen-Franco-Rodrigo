@@ -93,6 +93,8 @@
                      <a href="#" class="text-white">Nosotros</a>
                      <br>
                      <a href="/preguntasFrecuentes" class="text-white">Preguntas fecuentes</a>
+                     <br>
+                     <a href="/comentarios" class="text-white">Comentarios</a>
                   </ul>
                </div>
                <div class="p-4 col-md-4 foot">

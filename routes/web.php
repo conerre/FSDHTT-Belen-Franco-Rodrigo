@@ -40,7 +40,9 @@ Route::get("/comoRealizarCompra", "MainController@aCRP");
 
 Route::get("/preguntasFrecuentes", "MainController@aPF");
 
+Route::get("/comentarios", "MainController@aComentarios");
 
+Route::get("/carrito", "MainController@aCarrito");
 
 Route::get("/perfil", "MainController@aPerfil");
 Route::get("/contacto", "MainController@aContacto");

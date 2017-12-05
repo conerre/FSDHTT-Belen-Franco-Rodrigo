@@ -388,6 +388,30 @@ div.section div input {
 }
 */
 
+
+/* Comentarios*/
+
+.comment{
+    margin-right: 20px;
+    margin-left: 20px; 
+    margin-bottom: 30px;
+}
+
+
+/* Carrito */
+
+.carrito{
+  padding: 5%;
+    background-color: #f2f2f2;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.precioTotal {
+  background-color: black;
+  color: white;
+}
+
 /*Footer*/
 
 footer {

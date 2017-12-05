@@ -37,6 +37,14 @@ class MainController extends Controller
     	return view("preguntasFrecuentes");
     }
 
+    public function aComentarios(){
+        return view("comentarios");
+    }
+
+    public function aCarrito(){
+        return view("carrito");
+    }
+
     //Categorías
     public function aAcces(){
         return view("accesorio");
