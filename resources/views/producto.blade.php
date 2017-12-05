@@ -20,8 +20,10 @@
                     <div class="section">
                         <h6 class="title-attr"><small>MEDIDAS</small></h6>                    
                         <div>
-                            <div class="attr2">1 mts</div>
-                            <div class="attr2">2 mts</div>
+                            <div for=" " class="labelproducto">1 mts
+                            <input type="radio" name="gender" id="male" value="male"></div>
+                            <div for=" " class="labelproducto">2 mts
+                            <input type="radio" name="gender" id="female" value="female"></div>
                         </div>
                     </div>   
                     <div class="section">
@@ -35,7 +37,7 @@
         
                     <!-- Botones de compra -->
                     <div class="section">
-                        <button class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
+                        <button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
                         <h6><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> Agregar a lista de deseos</a></h6>
                     </div>                                        
                 </div>                              

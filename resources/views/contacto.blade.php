@@ -21,7 +21,7 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Mensaje" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+          <button class="btn btn-info pull-right" type="submit">Enviar</button>
         </div>
       </div>
     </div>

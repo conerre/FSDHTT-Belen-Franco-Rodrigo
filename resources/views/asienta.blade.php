@@ -43,9 +43,9 @@
                               <div class="titulo-slide2">_ <br> REPOSERAS <br>TERRAZO <br>FIBRA <br> </div>
                             </h2>
                             <br>
-                            <h3>
-                              <div class="subtitulo-slide2"> Reposera de madera maciza jatobá con terminación ecoblindaje. Con fibra sintética simil ratán de polietileno. Resistente a los rayos solares y humedad. Acción insecticida y funguicida. </div>
-                            </h3>
+                            <h4>
+                              <div class="subtitulo-slide2"> Reposera de madera maciza jatobá con terminación ecoblindaje. Con fibra sintética simil ratán de polietileno. Resistente a los rayos solares y humedad. </div>
+                            </h4>
                             <a href="#" class="btn btn-info btn-lg btn-comprar" role="button">COMPRAR</a>
                             <br>
                         </div>
@@ -60,7 +60,7 @@
     <a href="#" class="btn">Sillas</a>
     <a href="#" class="btn">Reposeras</a>
     <a href="#" class="btn">Sillones</a>
-    
+
   </div>
 
   <div class="row">
@@ -72,9 +72,8 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto 123</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div>
@@ -83,9 +82,8 @@
       <img src="images/producto2.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto 123</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div>
@@ -94,9 +92,8 @@
       <img src="images/producto3.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto 123</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div>
@@ -105,9 +102,8 @@
       <img src="images/producto1.jpg" alt="...">
       <div class="caption">
         <h4>Banco madera jardín</h4>
-        <p>Producto 123</p>
         <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-danger" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+        <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
       </div>
     </div>
   </div>
