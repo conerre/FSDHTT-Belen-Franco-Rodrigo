@@ -41,7 +41,9 @@ Route::get("/comoRealizarCompra", "MainController@aComoRealizarCompra");
 
 Route::get("/preguntasFrecuentes", "MainController@aPreguntasFrecuentes");
 
+Route::get("/comentarios", "MainController@aComentarios");
 
+Route::get("/carrito", "MainController@aCarrito");
 
 Route::get("/perfil", "MainController@aPerfil");
 Route::get("/contacto", "MainController@aContacto");

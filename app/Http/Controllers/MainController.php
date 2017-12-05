@@ -37,5 +37,37 @@ class MainController extends Controller
     public function aPreguntasFrecuentes(){
     	return view("preguntasFrecuentes");
     }
-    
+
+    public function aComentarios(){
+        return view("comentarios");
+    }
+
+    public function aCarrito(){
+        return view("carrito");
+    }
+
+    //Categorías
+    public function aAcces(){
+        return view("accesorio");
+    }
+
+    public function aDorm(){
+        return view("dormitorio");
+    }
+
+    public function aComdeor(){
+        return view("comedor");
+    }
+
+    public function aLiving(){
+        return view("living");
+    }
+
+    public function aExt(){
+        return view("exteriores");
+    }
+
+    public function aMaster(){
+        return view("masterPage");
+    }
 }
