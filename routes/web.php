@@ -42,7 +42,7 @@ Route::get("/preguntasFrecuentes", "MainController@aPF");
 
 
 
-
+Route::get("/perfil", "MainController@aPerfil");
 Route::get("/contacto", "MainController@aContacto");
 
 Route::get("/", "MainController@aAsienta");

@@ -70,7 +70,7 @@
                   <ul>
                      <form class="navbar-form navbar-right search">
                         <div class="form-group">
-                           <input type="text" class="form-control searcher" placeholder="Búsqueda">
+                           <input type="text" class="form-control searcher" placeholder="Búsqueda..">
                         </div>
                         <button type="submit" class="btn btn-defaul hidden-xs"><i class="fa fa-search hidden-xs" aria-hidden="true"></i></button>
                      </form>

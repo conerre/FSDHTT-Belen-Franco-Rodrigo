@@ -16,6 +16,10 @@ class MainController extends Controller
         return view("contacto");
     }
 
+    public function aPerfil(){
+        return view("perfil");
+    }
+
     //Nosotros
     public function aExp(){
     	return view("experiencias");
