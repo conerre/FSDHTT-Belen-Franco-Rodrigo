@@ -4,8 +4,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-      <link rel="stylesheet" type="text/css" href="../css/animaciones-y-random.css">
+      <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+      <link rel="stylesheet" type="text/css" href="/css/animaciones-y-random.css">
       <title>Asienta</title>
       <link rel="icon" type="image/png" 
          href="images/favicon.png">
@@ -16,17 +16,17 @@
          <div class="nav-sesion text-right" style="padding-right: 15px;">
             @if(session('usuario') and session('usuario')->type==1)
                Hola <a href="perfil">{{session('usuario')->first_name}}</a>
-              <a href="logout">Logout</a>
+              <a href="/logout">Logout</a>
             @endif
             @if(session('usuario') and session('usuario')->type==2)
-               Hola <a href="perfil">Admin {{session('usuario')->first_name}}</a>
+               Hola <a href="/perfil">Admin {{session('usuario')->first_name}}</a>
                
-               <a href="adminPanel">Panel</a>
-              <a href="logout">Logout</a>
+               <a href="/adminPanel">Panel</a>
+              <a href="/logout">Logout</a>
             @endif  
             @if(!session('usuario'))
-               <a href="register">Registración</a>
-               <a href="login">Login</a>
+               <a href="/register">Registración</a>
+               <a href="/login">Login</a>
             @endif
          </div>
          <nav class="navbar navbar-default navbar-static-top">

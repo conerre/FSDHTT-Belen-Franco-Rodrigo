@@ -8,7 +8,7 @@ use App\Product;
 class Category extends Model
 {	
 	protected $guarded = [];
-    public function productos(){
+    public function products(){
     	return $this->hasMany(Product::class, "category_id");
     }
 }

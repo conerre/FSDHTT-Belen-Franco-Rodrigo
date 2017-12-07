@@ -9,8 +9,8 @@ use App\Product;
 class ProductController extends Controller
 {
     public function show($id){
-    	$producto = Product::find($id);
-    	$VAC = compact("producto");
+    	$product = Product::find($id);
+    	$VAC = compact("product");
     	return view("producto", $VAC);
     }
 
@@ -37,17 +37,17 @@ class ProductController extends Controller
 
       $this->validate($request, $reglas, $mensajes);
 
-      $producto = new Product();
+      $product = new Product();
 
-      $producto->name = $request["name"];
-      $producto->price = $request["price"];
-      $producto->stock = $request["stock"];
-      $producto->description = $request["description"];
-      $producto->article_code = $request["article_code"];
-      $producto->category_id = $request["category"];
+      $product->name = $request["name"];
+      $product->price = $request["price"];
+      $product->stock = $request["stock"];
+      $product->description = $request["description"];
+      $product->article_code = $request["article_code"];
+      $product->category_id = $request["category"];
 
 
-      $producto->save();
+      $product->save();
 
       return redirect("/agregarProducto");
     }

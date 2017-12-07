@@ -4,16 +4,16 @@
 <div class="container">
         	<div class="row col-md-10 col-md-offset-1 col-xs-12">
                <div class="col-md-6 col-sm-6 col-xs-12 item-photo">
-                    <img class="imagen-producto" src="images/producto1.jpg" />
+                    <img class="imagen-producto" src="/images/producto1.jpg" />
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12 productoContainer">
                     <!-- Datos del vendedor y titulo del producto -->
-                    <h3>Banco Hudson Urban</h3>    
+                    <h3>{{$product->name}}</h3>    
                     <h5>Línea <a href="#">BELÉM.</a></h5>
         
                     <!-- Precios -->
                     <h6 class="title-price"><small>PRECIO OFERTA</small></h6>
-                    <h3>$ 3999</h3>
+                    <h3>$ {{$product->price}}</h3>
         
                     <!-- Detalles especificos del producto -->
                    
@@ -49,9 +49,7 @@
                     <div class="descripcion-producto">
                         <p>
                             <small>
-                                {{Pproducto->description}}
-                            Banco de madera maciza de grapia de alta densidad. Acabado Ecoblindaje, resistencia a la intemperie. Base de acero al carbono para fijarlo al piso. Ideal halls de entrada. Peso: 84 kgs. 
-                            Unidades de venta: 1
+                                {{$product->description}}
                             </small>
                         </p>
                     </div>

@@ -443,52 +443,21 @@ li.active{
   color: white;
 }
 
-/*Footer*/
+  
 
-footer {
-  /*position: absolute;*/
-  bottom: 0;
-  width: 100%;
-  background-color: #efefef;
-  text-align: center;
-  padding: 20px 0px;
+
+/*Seccion ADMIN*/
+
+  /*Agregar Producto*/
+
+.addProductControl{
+  width: 20%;
 }
 
-footer a{
-  color: grey;
+#descripcionProducto{
+  height: 160px;
+  width: 38%;
 }
-
-footer label{
-  color: grey;
-}
-
-.glyphicon{
-  color: darkgrey;
-  margin-right: 5px;
-}
-
-.preguntas-frecuentes{
-  margin: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.preguntas-frecuentes h3{
-  text-align: center;
-  border-bottom: black solid 1px;
-}
-
-#exampleInputEmail1{
-  max-width: 300px;
-  display: block;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-
 
 
 /*PREGUNTAS FRECUENTES*/
@@ -597,7 +566,50 @@ a {
   margin:5px 0  5px 0
 }
 
+/*Footer*/
 
+footer {
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
+  background-color: #efefef;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+footer a{
+  color: grey;
+}
+
+footer label{
+  color: grey;
+}
+
+.glyphicon{
+  color: darkgrey;
+  margin-right: 5px;
+}
+
+.preguntas-frecuentes{
+  margin: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.preguntas-frecuentes h3{
+  text-align: center;
+  border-bottom: black solid 1px;
+}
+
+#exampleInputEmail1{
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
 
 
 /* MOBILE */
@@ -614,6 +626,9 @@ a {
   margin-bottom: 60px;
 }   
 @media only screen and (max-width: 767px){
+.addProductControl{
+  width: 100%;
+}
 
 .navbar-collapse{
   position: absolute;
