@@ -21,6 +21,7 @@ Route::get("/adminPanel", "AdminController@panel")->middleware('admin');
 Route::get("/registerAdmin", "AdminController@addAdmin")->middleware('admin');
 Route::get("/agregarProducto", "ProductController@add")->middleware('admin');
 Route::post("/agregarProducto", "ProductController@save");
+Route::get("/borrarProducto/{id}", "ProductController@delete");
 
 	//Productos	
 Route::get("/productos", "ProductController@todos")->middleware('admin');

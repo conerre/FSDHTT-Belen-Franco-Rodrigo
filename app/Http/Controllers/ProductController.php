@@ -52,6 +52,13 @@ class ProductController extends Controller
       return redirect("/agregarProducto");
     }
 
+    public function delete($id) {
+      $pelicula = Product::find($id);
+      $pelicula->delete();
+
+      return redirect("/");
+    }
+
       public function todos(){
       $products = Product::all();
       $VAC = compact("products");

@@ -39,7 +39,12 @@
                     <div class="section">
                         <button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
                         <h6><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> Agregar a lista de deseos</a></h6>
-                    </div>                                        
+                    </div> 
+                    @if(session('usuario') and session('usuario')->type==2)
+                    <a href="/borrarProducto/{{$product->id}}">
+                        <button type="button" name="button" class="btn btn-danger">Borrar producto</button>
+                    </a>
+                    @endif
                 </div>                              
         
                 <div class="col-xs-12">
