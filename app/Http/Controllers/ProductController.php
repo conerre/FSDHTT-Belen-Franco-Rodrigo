@@ -53,8 +53,8 @@ class ProductController extends Controller
     }
 
     public function delete($id) {
-      $pelicula = Product::find($id);
-      $pelicula->delete();
+      $product = Product::find($id);
+      $product->delete();
 
       return redirect("/");
     }
@@ -65,3 +65,4 @@ class ProductController extends Controller
       return view("productosAdmin", $VAC);
     }
 }
+

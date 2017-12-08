@@ -12,19 +12,21 @@
 */
 
 
+//Admin
 
-//Páginas estáticas
-
-
-	//Admin
 Route::get("/adminPanel", "AdminController@panel")->middleware('admin');
 Route::get("/registerAdmin", "AdminController@addAdmin")->middleware('admin');
+	//Categorias-admin
+Route::get("/agregarCategoria", "CategoryController@add")->middleware('admin');
+Route::post("/agregarCategoria", "CategoryController@save")->middleware('admin');
+Route::get("/borrarCategoria/{id}", "CategoryController@delete")->middleware('admin');
+	//Productos-admin
 Route::get("/agregarProducto", "ProductController@add")->middleware('admin');
-Route::post("/agregarProducto", "ProductController@save");
-Route::get("/borrarProducto/{id}", "ProductController@delete");
+Route::post("/agregarProducto", "ProductController@save")->middleware('admin');
+Route::get("/borrarProducto/{id}", "ProductController@delete")->middleware('admin');
 
 	//Productos	
-Route::get("/productos", "ProductController@todos")->middleware('admin');
+Route::get("/productos", "ProductController@todos");
 Route::get("/producto/{id}", "ProductController@show");
 Route::get("/editarProducto", "ProductController@edit");
 Route::put("/editarProducto", "ProductController@update");
