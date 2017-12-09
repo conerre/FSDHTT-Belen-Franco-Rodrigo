@@ -4,7 +4,7 @@
 <div class="container">
         	<div class="row col-md-10 col-md-offset-1 col-xs-12">
                <div class="col-md-6 col-sm-6 col-xs-12 item-photo">
-                    <img class="imagen-producto" src="/images/producto1.jpg" />
+                    <img class="imagen-producto" src="{{$product->rutaThumbnail()}}">
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12 productoContainer">
                     <!-- Datos del vendedor y titulo del producto -->
@@ -18,12 +18,9 @@
                     <!-- Detalles especificos del producto -->
                    
                     <div class="section">
-                        <h6 class="title-attr"><small>MEDIDAS</small></h6>                    
+                        <h6 class="title-attr"><small>STOCK</small></h6>                    
                         <div>
-                            <div for=" " class="labelproducto">1 mts
-                            <input type="radio" name="gender" id="male" value="male"></div>
-                            <div for=" " class="labelproducto">2 mts
-                            <input type="radio" name="gender" id="female" value="female"></div>
+                             {{$product->stock}}
                         </div>
                     </div>   
                     <div class="section">
@@ -37,13 +34,16 @@
         
                     <!-- Botones de compra -->
                     <div class="section">
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
+                        <div class="section">
+                            <a href="/compro/{{$product->id}}"><button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</button></a>
+                        </div> 
+                        <br>
+                         <button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
                         <h6><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> Agregar a lista de deseos</a></h6>
                     </div> 
                     @if(session('usuario') and session('usuario')->type==2)
-                    <a href="/borrarProducto/{{$product->id}}">
-                        <button type="button" name="button" class="btn btn-danger">Borrar producto</button>
-                    </a>
+                    <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger">Eliminar producto</button></a><br><br>
+                    <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>
                     @endif
                 </div>                              
         

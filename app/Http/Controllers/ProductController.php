@@ -14,6 +14,12 @@ class ProductController extends Controller
     	return view("producto", $VAC);
     }
 
+    public function todos(){
+      $products = Product::all();
+      $VAC = compact("products");
+      return view("productos", $VAC);
+    }
+
       public function add(){
       $categories = Category::all();
       $VAC = compact("categories");
@@ -28,6 +34,7 @@ class ProductController extends Controller
           "stock" =>  "required|numeric|min:0",
           "description" => "required|string",
           "article_code" => "required|string",
+          "thumbnail" => "required",
       ];
 
       $mensajes = [
@@ -37,6 +44,10 @@ class ProductController extends Controller
 
       $this->validate($request, $reglas, $mensajes);
 
+      $thumbnail = $request->file("thumbnail");
+
+      $nombreThumbnail = $thumbnail->storePublicly("public/thumbnails");
+
       $product = new Product();
 
       $product->name = $request["name"];
@@ -45,6 +56,7 @@ class ProductController extends Controller
       $product->description = $request["description"];
       $product->article_code = $request["article_code"];
       $product->category_id = $request["category"];
+      $product->thumbnail = $nombreThumbnail;
 
 
       $product->save();
@@ -59,10 +71,47 @@ class ProductController extends Controller
       return redirect("/");
     }
 
-      public function todos(){
-      $products = Product::all();
-      $VAC = compact("products");
-      return view("productosAdmin", $VAC);
+    public function edit($id){
+      $categories = Category::all();
+      $product = Product::find($id);
+      $VAC = compact("product", "categories");
+      return view ("editarProducto", $VAC);
+    }
+
+    public function update(Request $request){
+      $reglas = [
+        "name" => "required|string",
+        "price" => "required|numeric|min:0",
+        "stock" =>  "required|numeric|min:0",
+        "description" => "required|string",
+        "article_code" => "required|string",
+      ];
+
+      $mensajes = [
+        "required" => "El campo :attribute es requerido",
+        "min" => "El campo :attribute debe tener un mínimo de :min caractéres"
+      ];
+
+      $this->validate($request, $reglas, $mensajes);
+
+      $thumbnail = $request->file("thumbnail");
+
+      $nombreThumbnail = $thumbnail->storePublicly("public/thumbnails");
+
+      $product = Product::find($request["id"]);
+
+      $product->name = $request["name"];
+      $product->price = $request["price"];
+      $product->stock = $request["stock"];
+      $product->description = $request["description"];
+      $product->article_code = $request["article_code"];
+      $product->category_id = $request["category"];
+      $product->thumbnail = $nombreThumbnail;
+
+
+      $product->save();
+
+      return redirect("/producto/" . $request["id"]);
     }
 }
 

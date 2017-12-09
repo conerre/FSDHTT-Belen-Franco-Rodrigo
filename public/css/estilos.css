@@ -7,7 +7,9 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: white;  
 }
-
+ul{
+  list-style: none;
+}
 
   /*Inicio y registro top right*/
 
@@ -344,6 +346,11 @@ label{
   padding:2px;
   border:1px solid gray;
   border-radius:2px;
+}
+
+.thumbnail-producto{
+  height:15%;
+  width:15%;
 }
 
 /*ul li{

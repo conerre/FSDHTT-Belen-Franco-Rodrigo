@@ -24,12 +24,16 @@ Route::get("/borrarCategoria/{id}", "CategoryController@delete")->middleware('ad
 Route::get("/agregarProducto", "ProductController@add")->middleware('admin');
 Route::post("/agregarProducto", "ProductController@save")->middleware('admin');
 Route::get("/borrarProducto/{id}", "ProductController@delete")->middleware('admin');
+Route::get("/editarProducto/{id}", "ProductController@edit")->middleware('admin');
+Route::patch("/editarProducto", "ProductController@update")->middleware('admin');
+
+	//Compras
+Route::get("/compro/{id}", "CompraController@menosStock");
+
 
 	//Productos	
 Route::get("/productos", "ProductController@todos");
 Route::get("/producto/{id}", "ProductController@show");
-Route::get("/editarProducto", "ProductController@edit");
-Route::put("/editarProducto", "ProductController@update");
 
 	//Categorías
 Route::get("/categoría/{id}", "CategoryController@showCategory");

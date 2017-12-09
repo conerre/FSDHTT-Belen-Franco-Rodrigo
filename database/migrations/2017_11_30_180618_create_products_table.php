@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->float('price')->unsigned();
             $table->integer('stock')->unsigned();
             $table->text('description');
-            $table->string('article_code')->nullable();
+            $table->string('article_code')->nullable()->default(null);
             $table->timestamps();
         });
     }

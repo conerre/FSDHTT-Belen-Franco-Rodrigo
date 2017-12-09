@@ -12,7 +12,7 @@
 	    </div>
 	@endif
 <br>	
-  <form class="" action="/agregarProducto" method="post">
+  <form class="" action="/agregarProducto" method="post" enctype="multipart/form-data">
     {{ csrf_field() }}
     <div class="form-group">
     <h3>Nombre:</h3> <input class="form-control addProductControl" type="text" name="name" value="{{old("name")}}">
@@ -28,6 +28,9 @@
     </div>
     <div class="form-group">
     <h3>Descripción:</h3> <textarea id="descripcionProducto" class="form-control addProductControl" type="text-area" name="description" value="{{old("description")}}"></textarea>
+    </div>
+    <div class="form-group">
+    <h3>Imagen:</h3> <input type="file" name="thumbnail" id="fileToUpload"> 
     </div>
     <h3>Categoría:</h3>
     <select class="form-control addProductControl" name="category">

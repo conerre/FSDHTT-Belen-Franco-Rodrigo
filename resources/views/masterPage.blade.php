@@ -7,7 +7,7 @@
       <link rel="stylesheet" type="text/css" href="/css/estilos.css">
       <link rel="stylesheet" type="text/css" href="/css/animaciones-y-random.css">
       <title>Asienta</title>
-      <link rel="icon" type="image/png" 
+      <link rel="icon" type="/image/png" 
          href="images/favicon.png">
    </head>
    <body>

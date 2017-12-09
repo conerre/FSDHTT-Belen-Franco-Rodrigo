@@ -2,11 +2,11 @@
 @section("principal")
 <div class="container">
 
-  @if (session()->has('mensaje'))
+  {{--@if (session()->has('mensaje'))
     <div class="alert alert-success notificacion" role="alert">
       {{session('mensaje')}}
     </div>
-  @endif
+  @endif--}}
 
   <div class="row hidden-xs hidden-sm">
       <div id="my-slider" class="carousel slide" data-ride="carousel">
