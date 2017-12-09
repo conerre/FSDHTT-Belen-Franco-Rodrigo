@@ -6,11 +6,16 @@ use Illuminate\Http\Request;
 use Auth;
 use App\User;
 use App\Category;
+use App\Product;
+
 
 class MainController extends Controller
 {
     public function aAsienta(Request $request){
-        return view("asienta");
+        $destacados = Product::where("stock", "<", 2)->take(4)->get();
+        $products = Product::orderBy('id', 'desc')->take(4)->get();
+        $VAC = compact("products", "destacados");
+        return view("asienta", $VAC);
     }
 
     public function aContacto(){

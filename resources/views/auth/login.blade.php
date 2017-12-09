@@ -1,8 +1,7 @@
 @extends('masterPage')
 
 @section('principal')
-<div class="container loginContainer">
-    <div class="row">
+    <div class="row loginContainer">
         <div class="col-md-4 col-md-offset-4">
             <div class="panel panel-default panelLogin">
                 <label style="text-align: center;"><h3>Iniciar Sesión</h3></label>
@@ -65,6 +64,5 @@
             </div>
         </div>
     </div>
-</div>
 @endsection
 

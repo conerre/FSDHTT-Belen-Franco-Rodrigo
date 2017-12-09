@@ -85,6 +85,9 @@ ul{
 
 /*Categorias*/
 
+.nombre-categoria{
+}
+
 .botones-categoria {
     margin-top: 20px;
 }
@@ -466,12 +469,16 @@ li.active{
   width: 38%;
 }
 
+  /*Admin Panel*/
+.admin-row{
+  margin:25% 0;
+}  
 
 /*PREGUNTAS FRECUENTES*/
 
 .preguntasFrecuentesContainer{
   width: 100%;
-  margin: 12.5% 0;
+  margin: 14.1% 0;
 }
 
 .preguntas{
@@ -502,7 +509,7 @@ li.active{
 }
 
 .registroContainer{
-  margin: 5% 0;
+  margin: 5.5% 0;
 }
 
 
@@ -518,7 +525,7 @@ li.active{
 }
 
 .loginContainer{
-  margin: 9% 0;
+  margin: 10.5% 0;
 }
 
 
@@ -530,14 +537,14 @@ li.active{
 
 .historia {
       padding: 60px 50px;
-      margin: 6.5% 0;
+      margin: 6.7% 0;
   }
 
 
 /*CONTACTO*/
 
 .contactoContainer{
-    margin: 8.5% 4%;
+    margin: 11.2% 4%;
     padding: 3%;
     background-color: #f2f2f2;
 }

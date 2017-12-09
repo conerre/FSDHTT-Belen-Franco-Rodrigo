@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Product;
 
 class CategoryController extends Controller
 {
     public function showCategory($id){
     	$category = Category::find($id);
-    	$VAC = compact("category");
+      $products = Product::all();
+    	$VAC = compact("category", "products");
     	return view("category", $VAC);
     }
 

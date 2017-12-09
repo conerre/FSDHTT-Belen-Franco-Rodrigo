@@ -56,57 +56,57 @@
 </div>
 
   <div class="btn-group btn-group-justified botones-categoria">
-    <a href="#" class="btn">Mesas</a>
-    <a href="#" class="btn">Sillas</a>
-    <a href="#" class="btn">Reposeras</a>
-    <a href="#" class="btn">Sillones</a>
-
+    @foreach(Request::get('categories')  as $category)
+      <a href="/categoría/{{$category->id}}" class="btn">{{$category->name}}</a>
+    @endforeach
   </div>
 
   <div class="row">
-    <h4 id="productosDestacados">Productos destacados</h4>
+    <h4 id="productosDestacados">Últimos productos</h4>
   </div>  
-  <div class="row">
-  <div class="col-sm-6 col-md-3 img-prod">
-    <div class="thumbnail"">
-      <img src="images/producto1.jpg" alt="...">
-      <div class="caption">
-        <h4>Banco madera jardín</h4>
-        <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+      @foreach($products->chunk(4) as $chunk)
+        <div class="row">
+        @foreach($chunk as $product)
+            <div class="col-sm-6 col-md-3 img-prod">
+              <div class="thumbnail">
+                 <a href="/producto/{{$product->id}}"><img src="{{$product->rutaThumbnail()}}" alt="imagen de producto"></a>
+                <div class="caption">
+                  <h4>{{$product->name}}</h4>
+                  <h5>$ {{$product->price}}</h5>
+                  <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+                   @if(session('usuario') && session('usuario')->type==2)
+                    <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
+                    <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        
+                  @endif
+                </div>
+              </div>
+            </div>
+        @endforeach
       </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3 img-prod">
-    <div class="thumbnail"">
-      <img src="images/producto2.jpg" alt="...">
-      <div class="caption">
-        <h4>Banco madera jardín</h4>
-        <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+      @endforeach
+
+    <div class="row">
+      <h4 id="productosDestacados">Productos destacados</h4>
+    </div>  
+      @foreach($destacados->chunk(4) as $chunk)
+        <div class="row">
+        @foreach($chunk as $destacado)
+            <div class="col-sm-6 col-md-3 img-prod">
+              <div class="thumbnail">
+                 <a href="/producto/{{$destacado->id}}"><img src="{{$destacado->rutaThumbnail()}}" alt="imagen de producto"></a>
+                <div class="caption">
+                  <h4>{{$destacado->name}}</h4>
+                  <h5>$ {{$destacado->price}}</h5>
+                  <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+                   @if(session('usuario') && session('usuario')->type==2)
+                    <a href="/borrarProducto/{{$destacado->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
+                    <a href="/editarProducto/{{$destacado->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        
+                  @endif
+                </div>
+              </div>
+            </div>
+        @endforeach
       </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3 img-prod">
-    <div class="thumbnail"">
-      <img src="images/producto3.jpg" alt="...">
-      <div class="caption">
-        <h4>Banco madera jardín</h4>
-        <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-3 img-prod">
-    <div class="thumbnail"">
-      <img src="images/producto1.jpg" alt="...">
-      <div class="caption">
-        <h4>Banco madera jardín</h4>
-        <h5>$3.500</h5>
-        <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
-      </div>
-    </div>
-  </div>
-  </div>
+      @endforeach   
 </div>
 @endsection

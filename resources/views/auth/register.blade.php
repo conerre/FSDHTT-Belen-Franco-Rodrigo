@@ -1,8 +1,7 @@
 @extends('masterPage')
 
 @section('principal')
-<div class="container registroContainer">
-    <div class="row">
+    <div class="row registroContainer">
         <div class="col-md-4 col-md-offset-4">
             <div class="panel panel-default panelRegistro">
                 <label style="text-align: center;"><h3>Registración</h3></label>
@@ -87,6 +86,5 @@
             </div>
         </div>
     </div>
-</div>
 @endsection
 
