@@ -15,18 +15,19 @@
          <script src="https://use.fontawesome.com/c276b8a2b3.js"></script>
          <div class="nav-sesion text-right" style="padding-right: 15px;">
             @if(session('usuario') and session('usuario')->type==1)
-               Hola <a href="perfil">{{session('usuario')->first_name}}</a>
-              <a href="/logout">Logout</a>
+            Hola <a href="perfil">{{session('usuario')->first_name}}</a>
+            <a href="/carrito">Mi carrito</a>
+            <a href="/logout">Logout</a>
             @endif
             @if(session('usuario') and session('usuario')->type==2)
-               Hola <a href="/perfil">Admin {{session('usuario')->first_name}}</a>
-               
-               <a href="/adminPanel">Panel</a>
-              <a href="/logout">Logout</a>
+            Hola Admin<a href="/perfil"> {{session('usuario')->first_name}}</a>
+            <a href="/carrito">Mi carrito</a>
+            <a href="/adminPanel">Panel</a>
+            <a href="/logout">Logout</a>
             @endif  
             @if(!session('usuario'))
-               <a href="/register">Registración</a>
-               <a href="/login">Login</a>
+            <a href="/register">Registración</a>
+            <a href="/login">Login</a>
             @endif
          </div>
          <nav class="navbar navbar-default navbar-static-top">
@@ -50,13 +51,13 @@
                            <li><a href="/preguntasFrecuentes">Preguntas frecuentes</a></li>
                         </ul>
                      </li>
-               </ul>
+                  </ul>
                   <ul class="nav navbar-nav navbar-left">
                      <li class="dropdown">
                         <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                            @foreach(Request::get('categories')  as $category)
-                              <li><a href="/categoría/{{$category->id}}">{{$category->name}}</a></li>
+                           <li><a href="/categoría/{{$category->id}}">{{$category->name}}</a></li>
                            @endforeach
                         </ul>
                      </li>
@@ -77,7 +78,7 @@
          </nav>
       </header>
       <div class="wrapper">
-      @yield("principal")
+         @yield("principal")
       </div>
       <footer>
          <div class="container-fluid">

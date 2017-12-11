@@ -10,7 +10,13 @@ class ProductController extends Controller
 {
     public function show($id){
     	$product = Product::find($id);
-    	$VAC = compact("product");
+      $carrito = session("carrito");
+      if ($carrito && in_array($id, $carrito)) {
+        $enCarrito = true;
+      } else {
+        $enCarrito = false;
+      }
+      $VAC = compact("product", "enCarrito");
     	return view("producto", $VAC);
     }
 
@@ -68,7 +74,14 @@ class ProductController extends Controller
       $product = Product::find($id);
       $product->delete();
 
-      return redirect("/");
+      return back();
+    }
+
+    public function deleteDetalle($id) {
+      $product = Product::find($id);
+      $product->delete();
+
+      return redirect("/productos");
     }
 
     public function edit($id){

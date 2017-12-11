@@ -23,6 +23,7 @@ Route::get("/borrarCategoria/{id}", "CategoryController@delete")->middleware('ad
 	//Productos-admin
 Route::get("/agregarProducto", "ProductController@add")->middleware('admin');
 Route::post("/agregarProducto", "ProductController@save")->middleware('admin');
+Route::get("/borrarProductoDeDetalle/{id}", "ProductController@deleteDetalle")->middleware('admin');
 Route::get("/borrarProducto/{id}", "ProductController@delete")->middleware('admin');
 Route::get("/editarProducto/{id}", "ProductController@edit")->middleware('admin');
 Route::patch("/editarProducto", "ProductController@update")->middleware('admin');
@@ -34,6 +35,11 @@ Route::get("/compro/{id}", "CompraController@menosStock");
 	//Productos	
 Route::get("/productos", "ProductController@todos");
 Route::get("/producto/{id}", "ProductController@show");
+
+	//Carrito
+Route::get("/carrito", "CarritoController@listar");
+Route::post("/quitarCarrito", "CarritoController@remove");
+Route::post("/agregarCarrito", "CarritoController@add");
 
 	//Categorías
 Route::get("/categoría/{id}", "CategoryController@showCategory");
@@ -53,6 +59,8 @@ Route::get("/comentarios", "MainController@aComentarios");
 Route::get("/producto", "MainController@aProducto");
 
 Route::get("/carrito", "MainController@aCarrito");
+
+
 
 Route::get("/perfil", "MainController@aPerfil");
 Route::get("/contacto", "MainController@aContacto");

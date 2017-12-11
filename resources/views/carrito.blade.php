@@ -14,16 +14,22 @@
         <th>Cantidad</th>
       </thead>
       <tbody id="ok">
-        <tr ng-repeat="myItem in myItems | reverse">
-          <td> ID del item</td>
-          <td> Nombre</td>
-          <td>$ 1733</td>
-          <td> Cantidad Total</td>
-        </tr>
+       @if(session('usuario'))
+          @forelse($carrito as $item)
+          <tr ng-repeat="myItem in myItems | reverse">
+            <td> {{$item->id}}</td>
+            <td> {{$item->name}}</td>
+            <td>$ {{$item->price}}</td>
+            <td> Cantidad Total</td>
+          </tr>
+          @empty
+            <p>No hay nada en tu carrito</p>
+          @endforelse
+        @endif
       </tbody>
     </table>
     <span class="text-center" ng-show="myItems.length == 0">
-      Your shopping cart is empty.
+      Tu carrito esta vacio.
     </span>
     <div class="clearfix"></div>
     <span class="pull-right alert alert-file precioTotal">Total Price: $ </span>

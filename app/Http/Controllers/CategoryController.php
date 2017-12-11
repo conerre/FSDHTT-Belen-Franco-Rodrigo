@@ -10,8 +10,8 @@ class CategoryController extends Controller
 {
     public function showCategory($id){
     	$category = Category::find($id);
-      $products = Product::all();
-    	$VAC = compact("category", "products");
+      $category->products = Product::paginate(12);
+    	$VAC = compact("category", " category->products");
     	return view("category", $VAC);
     }
 

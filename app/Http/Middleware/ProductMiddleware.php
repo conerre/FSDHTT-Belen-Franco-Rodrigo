@@ -3,9 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\Category;
 
-class CategoryMiddleware
+class ProductMiddleware
 {
     /**
      * Handle an incoming request.
@@ -15,8 +14,14 @@ class CategoryMiddleware
      * @return mixed
      */
     public function handle($request, Closure $next)
-    {
-        $request->merge(array('categories' => Category::all()));
+    {     $carrito = session("carrito");
+          if ($carrito && in_array($id, $carrito)) {
+            $enCarrito = true;
+          } else {
+            $enCarrito = false;
+          }
+
+          
         return $next($request);
     }
 }
