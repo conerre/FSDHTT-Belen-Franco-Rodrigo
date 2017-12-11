@@ -8,7 +8,7 @@ use App\Category;
 class Product extends Model
 {
 	protected $guarded = [];
-    public function categories(){
+    public function categorias(){
     	return $this->belongsTo(Category::class,"category_id");
     }
 

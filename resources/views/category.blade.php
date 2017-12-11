@@ -9,7 +9,7 @@
    </a>
    @endif
 </h1>
-@foreach($category->products->chunk(4) as $chunk)
+@foreach($category->productos->chunk(4) as $chunk)
 <div class="row">
    @foreach($chunk as $product)
    <div class="col-sm-6 col-md-3 img-prod">

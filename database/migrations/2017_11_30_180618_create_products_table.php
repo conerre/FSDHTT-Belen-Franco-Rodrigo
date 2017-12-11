@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->integer('stock')->unsigned();
             $table->text('description');
             $table->string('article_code')->nullable()->default(null);
+            $table->binary('thumbnail');
             $table->timestamps();
         });
     }

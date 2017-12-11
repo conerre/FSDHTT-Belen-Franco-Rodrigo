@@ -16,6 +16,7 @@
       <tbody id="ok">
        @if(session('usuario'))
           @forelse($carrito as $item)
+          @dd($carrito);
           <tr ng-repeat="myItem in myItems | reverse">
             <td> {{$item->id}}</td>
             <td> {{$item->name}}</td>

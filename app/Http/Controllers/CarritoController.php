@@ -47,6 +47,7 @@ class CarritoController extends Controller
 		$carrito = Product::find($carritoIds);
 		
 		$VAC = compact("carrito");
+
 		return view("carrito", $VAC);
     } 
 }
