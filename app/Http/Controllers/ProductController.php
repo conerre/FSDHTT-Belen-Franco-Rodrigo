@@ -50,9 +50,9 @@ class ProductController extends Controller
 
       $this->validate($request, $reglas, $mensajes);
 
-      $thumbnail = $request->file("thumbnail");
-
-      $nombreThumbnail = $thumbnail->storePublicly("public/thumbnails");
+      $thumbnail = $request->file("thumbnail"); 
+ 
+      $nombreThumbnail = $thumbnail->storePublicly("public/thumbnails"); 
 
       $product = new Product();
 

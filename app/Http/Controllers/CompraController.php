@@ -16,7 +16,6 @@ class CompraController extends Controller
     		return redirect("/producto/$id");
     	}
     	if ($stock === 1) {
-    		$product->stock  -1;
     		$product->decrement('stock', 1);
     		$product->delete();
     		return redirect("/");
