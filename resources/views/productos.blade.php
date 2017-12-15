@@ -28,6 +28,7 @@
 			@if(session('usuario')->type===2)
 				<td>
 				<a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar</button></a>
+				<a href="/borrarProducto/{{$product->id}}"><button type="button" class="btn btn-danger">Eliminar</button></a>
 			</td>
 			
 			@endif
