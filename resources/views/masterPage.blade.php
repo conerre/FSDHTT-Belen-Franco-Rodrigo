@@ -66,11 +66,10 @@
                      <li><a href="/contacto">Contacto</a></li>
                   </ul>
                   <ul>
-                     <form class="navbar-form navbar-right search">
-                        <div class="form-group">
-                           <input type="text" class="form-control searcher" placeholder="Búsqueda..">
-                        </div>
-                        <button type="submit" class="btn btn-defaul hidden-xs"><i class="fa fa-search hidden-xs" aria-hidden="true"></i></button>
+                     <form class="navbar-form navbar-right search" action="/buscador" method="GET">
+                           <input type="text" class="form-control searcher" name="buscador" placeholder="Búsqueda..">
+                           <button type="submit" class="btn btn-defaul hidden-xs" value="buscar"><i class="fa fa-search hidden-xs" aria-hidden="true"></i></button>
+                           {{csrf_field()}}
                      </form>
                   </ul>
                </div>

@@ -28,13 +28,16 @@ Route::get("/borrarProducto/{id}", "ProductController@delete")->middleware('admi
 Route::get("/editarProducto/{id}", "ProductController@edit")->middleware('admin');
 Route::post("/editarProducto", "ProductController@store")->middleware('admin');
 
+	//Buscador
+Route::get("/buscador", "ProductController@buscar");
+
 	//Compras
 Route::get("/compro/{id}", "CompraController@menosStock");
 
 
 	//Productos	
 Route::get("/productos", "ProductController@todos");
-Route::get("/producto/{id}", "ProductController@show");
+Route::get("/producto/{id}", "ProductController@show");	
 
 	//Carrito
 Route::get("/carrito", "CarritoController@listar")->middleware("auth");
@@ -55,8 +58,6 @@ Route::get("/comoRealizarCompra", "MainController@aComoRealizarCompra");
 Route::get("/preguntasFrecuentes", "MainController@aPreguntasFrecuentes");
 
 Route::get("/comentarios", "MainController@aComentarios");
-
-Route::get("/producto", "MainController@aProducto");	
 
 
 

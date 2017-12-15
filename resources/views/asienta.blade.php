@@ -79,7 +79,7 @@
                            <button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
                        </form>
                    @endif     
-                   <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+                   <a href="/producto/{{$product->id}}" class="btn btn-default" role="button">Comprar</a></p>
                @if(session('usuario') && session('usuario')->type==2)
                <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
                <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        
@@ -102,7 +102,7 @@
             <div class="caption">
                <h4>{{$destacado->name}}</h4>
                <h5>$ {{$destacado->price}}</h5>
-               <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+               <p><a href="#" class="btn btn-info" role="button">Agregar a carrito</a> <a href="/producto/{{$product->id}}" class="btn btn-default" role="button">Comprar</a></p>
                @if(session('usuario') && session('usuario')->type==2)
                <a href="/borrarProducto/{{$destacado->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
                <a href="/editarProducto/{{$destacado->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        

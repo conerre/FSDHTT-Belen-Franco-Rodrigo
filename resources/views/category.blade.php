@@ -31,7 +31,7 @@
                            <button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
                         </form>
             @endif     
-            <a href="#" class="btn btn-default" role="button">Comprar</a></p>
+            <a href="/producto/{{$product->id}}" class="btn btn-default" role="button">Comprar</a></p>
             @if(session('usuario') && session('usuario')->type==2)
             <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
             <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        
