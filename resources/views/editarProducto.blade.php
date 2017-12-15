@@ -12,8 +12,9 @@
 	    </div>
 	@endif
 <br>	
-  <form class="" action="/editarProducto" method="post">
+  <form class="" action="/editarProducto" method="POST">
     {{ csrf_field() }}
+    <input type="hidden" name="id" value="{{$product->id}}">
     <div class="form-group">
     <h3>Nombre:</h3> <input class="form-control addProductControl" type="text" name="name" value="{{$product->name}}">
     </div>

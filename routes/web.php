@@ -26,7 +26,7 @@ Route::post("/agregarProducto", "ProductController@save")->middleware('admin');
 Route::get("/borrarProductoDeDetalle/{id}", "ProductController@deleteDetalle")->middleware('admin');
 Route::get("/borrarProducto/{id}", "ProductController@delete")->middleware('admin');
 Route::get("/editarProducto/{id}", "ProductController@edit")->middleware('admin');
-Route::patch("/editarProducto", "ProductController@update")->middleware('admin');
+Route::post("/editarProducto", "ProductController@store")->middleware('admin');
 
 	//Compras
 Route::get("/compro/{id}", "CompraController@menosStock");
@@ -37,7 +37,7 @@ Route::get("/productos", "ProductController@todos");
 Route::get("/producto/{id}", "ProductController@show");
 
 	//Carrito
-Route::get("/carrito", "CarritoController@listar");
+Route::get("/carrito", "CarritoController@listar")->middleware("auth");
 Route::post("/quitarCarrito", "CarritoController@remove");
 Route::post("/agregarCarrito", "CarritoController@add");
 
@@ -56,9 +56,7 @@ Route::get("/preguntasFrecuentes", "MainController@aPreguntasFrecuentes");
 
 Route::get("/comentarios", "MainController@aComentarios");
 
-Route::get("/producto", "MainController@aProducto");
-
-Route::get("/carrito", "MainController@aCarrito");
+Route::get("/producto", "MainController@aProducto");	
 
 
 
