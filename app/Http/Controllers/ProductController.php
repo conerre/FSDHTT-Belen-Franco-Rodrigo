@@ -21,7 +21,7 @@ class ProductController extends Controller
     }
 
     public function todos(){
-      $products = Product::all();
+      $products = Product::paginate(12);
       $VAC = compact("products");
       return view("productos", $VAC);
     }
@@ -67,7 +67,7 @@ class ProductController extends Controller
 
       $product->save();
 
-      return redirect("/agregarProducto");
+      return redirect("/productos");
     }
 
     public function delete($id) {
@@ -91,7 +91,7 @@ class ProductController extends Controller
       return view ("editarProducto", $VAC);
     }
 
-    public function update(Request $request){
+    public function store(Request $request){
       $reglas = [
         "name" => "required|string",
         "price" => "required|numeric|min:0",
@@ -109,8 +109,6 @@ class ProductController extends Controller
 
       $thumbnail = $request->file("thumbnail");
 
-      $nombreThumbnail = $thumbnail->storePublicly("public/thumbnails");
-
       $product = Product::find($request["id"]);
 
       $product->name = $request["name"];
@@ -119,12 +117,36 @@ class ProductController extends Controller
       $product->description = $request["description"];
       $product->article_code = $request["article_code"];
       $product->category_id = $request["category"];
-      $product->thumbnail = $nombreThumbnail;
 
 
       $product->save();
 
       return redirect("/producto/" . $request["id"]);
+    }
+
+    public function buscar(Request $request) {
+      $buscar = $request["buscador"];
+      $products = Product::where("name", "like", "%". $buscar . "%")->get();
+      $categories = Category::where("name", "like", "%". $buscar . "%")->get();
+      $carrito = session("carrito");
+      foreach($products as $product){  
+          if ($carrito && in_array($product->id, $carrito)) {
+            $enCarritoP = true;
+          } else {
+            $enCarritoP = false;
+          }
+        }
+      foreach($categories as $category){
+        foreach($category->productos as $product){  
+          if ($carrito && in_array($product->id, $carrito)) {
+            $enCarritoC= true;
+          } else {
+            $enCarritoC = false;
+          }
+        } 
+      }
+      $VAC = compact("products", "categories", "enCarritoP", "enCarritoC");
+      return view("resultados", $VAC);
     }
 }
 

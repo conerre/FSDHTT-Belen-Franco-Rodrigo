@@ -9,9 +9,18 @@ use App\Product;
 class CategoryController extends Controller
 {
     public function showCategory($id){
+      $products = Product::all();
+      $carrito = session("carrito");
+      foreach($products as $product){  
+        if ($carrito && in_array($product->id, $carrito)) {
+          $enCarrito = true;
+        } else {
+          $enCarrito = false;
+        }
+      }  
     	$category = Category::find($id);
       $category->products = Product::paginate(12);
-    	$VAC = compact("category", " category->products");
+    	$VAC = compact("category", " category->products", "enCarrito");
     	return view("category", $VAC);
     }
 

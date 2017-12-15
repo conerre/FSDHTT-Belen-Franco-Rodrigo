@@ -66,11 +66,10 @@
                      <li><a href="/contacto">Contacto</a></li>
                   </ul>
                   <ul>
-                     <form class="navbar-form navbar-right search">
-                        <div class="form-group">
-                           <input type="text" class="form-control searcher" placeholder="Búsqueda..">
-                        </div>
-                        <button type="submit" class="btn btn-defaul hidden-xs"><i class="fa fa-search hidden-xs" aria-hidden="true"></i></button>
+                     <form class="navbar-form navbar-right search" action="/buscador" method="GET">
+                           <input type="text" class="form-control searcher" name="buscador" placeholder="Búsqueda..">
+                           <button type="submit" class="btn btn-defaul hidden-xs" value="buscar"><i class="fa fa-search hidden-xs" aria-hidden="true"></i></button>
+                           {{csrf_field()}}
                      </form>
                   </ul>
                </div>
@@ -98,13 +97,13 @@
                <div class="p-4 col-md-4 foot">
                   <h4 class="mb-4">Contacto</h4>
                   <p>
-                     <a href="tel:+246 - 542 550 5462" class="text-white"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+549xxxxxxxxxx</a>
+                     <a href="tel:+246 - 542 550 5462" class="text-white"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+549113193-2606</a>
                   </p>
                   <p>
                      <a href="mailto:info@pingendo.com" class="text-white"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@asienta.com</a>
                   </p>
                   <p>
-                     <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-white" target="blank"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Alguna dirección</a>
+                     <a href="https://goo.gl/maps/AUq7b9W7yYJ2" class="text-white" target="blank"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Navarro 4391</a>
                   </p>
                </div>
                <div class="p-4 col-md-4 foot">

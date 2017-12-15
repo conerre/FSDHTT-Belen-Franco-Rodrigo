@@ -8,9 +8,8 @@
       <div class="col-md-4 col-sm-6 col-xs-12 productoContainer">
          <!-- Datos del vendedor y titulo del producto -->
          <h3>{{$product->name}}</h3>
-         <h5>Línea <a href="#">BELÉM.</a></h5>
          <!-- Precios -->
-         <h6 class="title-price"><small>PRECIO OFERTA</small></h6>
+         <h6 class="title-price"><small>PRECIO</small></h6>
          <h3>$ {{$product->price}}</h3>
          <!-- Detalles especificos del producto -->
          <div class="section">

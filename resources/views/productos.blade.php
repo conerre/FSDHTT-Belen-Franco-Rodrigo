@@ -1,7 +1,6 @@
 @extends("masterPage")
 @section("principal")
 
-
 <div class="table-responsive">
 <table class="table table-hover">
 	 <thead>
@@ -13,7 +12,6 @@
         <th>codigo</th>
     	</tr>
       </thead>
-
 <tbody>
 		@foreach($products as $product)
 	<tr>
@@ -29,7 +27,6 @@
 	
 			@if(session('usuario')->type===2)
 				<td>
-				<a href="/borrarProducto/{{$product->id}}"><button type="button" class="btn btn-danger">Eliminar</button></a>
 				<a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar</button></a>
 			</td>
 			

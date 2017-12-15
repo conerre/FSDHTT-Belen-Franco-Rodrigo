@@ -21,7 +21,7 @@
             <td> {{$item->id}}</td>
             <td> {{$item->name}}</td>
             <td>$ {{$item->price}}</td>
-            <td> Cantidad Total</td>
+            <td> 1</td>
           </tr>
           @empty
             <p>No hay nada en tu carrito</p>
@@ -33,8 +33,8 @@
       Tu carrito esta vacio.
     </span>
     <div class="clearfix"></div>
-    <span class="pull-right alert alert-file precioTotal">Total Price: $ </span>
-    <button ng-click="removeBasket()" ng-show="myItems.length > 0" class="pull-left alert alert-danger">Empty your cart</button>
+    <span class="pull-right alert alert-file precioTotal">Total: ${{$precioTotal}} </span>
+    <button ng-click="removeBasket()" ng-show="myItems.length > 0" class="pull-left alert alert-danger">Vaciá tu carrito</button>
   </div>
   
 </div>

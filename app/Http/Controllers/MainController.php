@@ -11,10 +11,28 @@ use App\Product;
 
 class MainController extends Controller
 {
-    public function aAsienta(Request $request){
+    public function aAsienta(){
         $destacados = Product::where("stock", "<", 2)->take(4)->get();
         $products = Product::orderBy('id', 'desc')->take(4)->get();
-        $VAC = compact("products", "destacados");
+        $carrito = session("carrito");
+
+        foreach ($products as $product) {
+            if ($carrito && in_array($product->id, $carrito)) {
+                $enCarrito = true;
+            } else {
+                $enCarrito = false;
+              }
+        }
+        foreach ($destacados as $destacado) {
+            if ($carrito && in_array($destacado->id, $carrito)) {
+                $enCarrito = true;
+            } else {
+                $enCarrito = false;
+              }
+        }
+
+        $VAC = compact("products", "destacados", "enCarrito");
+
         return view("asienta", $VAC);
     }
 

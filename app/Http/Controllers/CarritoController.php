@@ -45,8 +45,13 @@ class CarritoController extends Controller
 		}
 		
 		$carrito = Product::find($carritoIds);
+
+
+      	$precioTotal = $carrito->reduce(function ($carry, $item) {
+    		return $carry + $item->price;
+		},0);	
 		
-		$VAC = compact("carrito");
+		$VAC = compact("carrito", "precioTotal");
 
 		return view("carrito", $VAC);
     } 
