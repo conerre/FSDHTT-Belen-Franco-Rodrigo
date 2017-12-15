@@ -360,6 +360,11 @@ label{
   width:15%;
 }
 
+.fotoeditar{
+  height: 25px;
+  width: 25px;
+}
+
 /*ul li{
   margin-right:25px;
   font-weight:lighter;
