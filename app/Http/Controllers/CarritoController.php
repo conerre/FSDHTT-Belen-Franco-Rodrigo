@@ -55,4 +55,17 @@ class CarritoController extends Controller
 
 		return view("carrito", $VAC);
     } 
+
+    public function vaciar(Request $request){
+       $carrito = session("carrito");
+       $id = $request["id"];
+
+        foreach ($carrito as $id => $product) {
+             unset($carrito[$id]);
+         } 
+
+         session(["carrito" => $carrito]);
+
+         return back();
+   }
 }

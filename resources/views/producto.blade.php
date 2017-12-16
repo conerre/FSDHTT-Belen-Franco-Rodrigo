@@ -20,11 +20,7 @@
          </div>
          <div class="section">
             <h6 class="title-attr"><small>CANTIDAD</small></h6>
-            <div>
-               <div class="btn-minus agregar"><span class="glyphicon glyphicon-minus"></span></div>
-               <input class="cantidadProducto" value="1" />
-               <div class="btn-plus agregar"><span class="glyphicon glyphicon-plus"></span></div>
-            </div>
+           
          </div>
          <!-- Botones de compra -->
          <div class="section">

@@ -16,7 +16,6 @@
       <tbody id="ok">
        @if(session('usuario'))
           @forelse($carrito as $item)
-          @dd($carrito);
           <tr ng-repeat="myItem in myItems | reverse">
             <td> {{$item->id}}</td>
             <td> {{$item->name}}</td>
@@ -30,11 +29,16 @@
       </tbody>
     </table>
     <span class="text-center" ng-show="myItems.length == 0">
-      Tu carrito esta vacio.
     </span>
     <div class="clearfix"></div>
     <span class="pull-right alert alert-file precioTotal">Total: ${{$precioTotal}} </span>
-    <button ng-click="removeBasket()" ng-show="myItems.length > 0" class="pull-left alert alert-danger">Vaciá tu carrito</button>
+    <form action="/vaciarCarrito" method="POST">
+      {{ csrf_field() }}
+      @foreach($carrito as $product)
+        <input type="hidden" name="id" value="{{ $product->id }}">
+      @endforeach
+    <button type="submit" ng-click="removeBasket()" ng-show="myItems.length > 0" class="pull-left alert alert-danger">Vaciá tu carrito</button>
+    <form>
   </div>
   
 </div>

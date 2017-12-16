@@ -43,6 +43,7 @@ Route::get("/producto/{id}", "ProductController@show");
 Route::get("/carrito", "CarritoController@listar")->middleware("auth");
 Route::post("/quitarCarrito", "CarritoController@remove");
 Route::post("/agregarCarrito", "CarritoController@add");
+Route::post("/vaciarCarrito", "CarritoController@vaciar");
 
 	//Categorías
 Route::get("/categoría/{id}", "CategoryController@showCategory");
