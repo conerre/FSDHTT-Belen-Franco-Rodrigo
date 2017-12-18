@@ -54,10 +54,10 @@
                   </ul>
                   <ul class="nav navbar-nav navbar-left">
                      <li class="dropdown">
-                        <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+                        <a href="productos" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorías <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                            @foreach(Request::get('categories')  as $category)
-                           <li><a href="/categoría/{{$category->id}}">{{$category->name}}</a></li>
+                           <li><a href="/categoria/{{$category->id}}">{{$category->name}}</a></li>
                            @endforeach
                         </ul>
                      </li>

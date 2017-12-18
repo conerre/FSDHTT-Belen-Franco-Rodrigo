@@ -53,6 +53,57 @@
         <div class="panel-body">Tenemos un Showrrom en Capital federal para poder ver los muebles personalmente.</div>
       </div>
     </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">6- ¿Cómo pagar tu compra?</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">
+        <h4>Paga con Mercado Pago y tu compra estará 100% protegida, te devolveremos el dinero si el producto no es lo que esperabas.<br>
+
+Elige entre cualquiera de estos medios de pago:</h4>
+
+<ul>
+  <li>Visa Mastercard American Express Mercado Pago + Banco Patagonia Naranja Argencard Cabal Cencosud Nativa Tarjeta</li>
+  <li>Shopping Cordobesa CMR Cordial</li>
+<li>Rapipago Pago Fácil Carga Virtual
+En efectivo con Rapipago, Pago Fácil y Carga Virtual: te daremos un número para pagar.</li>
+
+<li>Red Link
+Transferencia bancaria con Red Link: paga desde tu homebanking o cajero automático.</li>
+
+<li>BaproPagos
+En efectivo con Provincia NET: imprime tu factura y acércate a pagar.</li>
+
+<li>Dinero en cuenta MercadoPago
+Dinero en tu cuenta: tu dinero disponible en Mercado Pago se transfiere al instante a la cuenta del receptor.</li>
+
+
+* No disponible para reventa de entradas.
+</ul>
+</div>
+      </div>
+    </div>
+<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">7- ¿Cómo puedo recibir el producto en mi casa?</a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+        <div class="panel-body">
+Si el vendedor ofrece Mercado Envíos, recibes el producto por correo en todo el país. En Capital Federal y algunas localidad de GBA tienes opciones más rápidas.
+
+Calculas el costo de envío desde la publicación y pagas todo junto por MercadoPago. En adelante, puedes hacer el seguimiento del envío desde tu compras.
+
+Si la publicación no tiene Mercado Envíos, puedes acordar el envío directamente con el vendedor.</div>
+      </div>
+    </div>
+
+
+
   </div> 
 </div>
 @endsection

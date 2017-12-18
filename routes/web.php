@@ -46,7 +46,7 @@ Route::post("/agregarCarrito", "CarritoController@add");
 Route::post("/vaciarCarrito", "CarritoController@vaciar");
 
 	//Categorías
-Route::get("/categoría/{id}", "CategoryController@showCategory");
+Route::get("/categoria/{id}", "CategoryController@showCategory");
 
 
 	//Nosotros

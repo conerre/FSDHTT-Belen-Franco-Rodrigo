@@ -33,22 +33,22 @@
                     <form class="" action="/quitarCarrito" method="POST">
                         {{csrf_field()}}
                         <input type="hidden" name="id" value="{{$product->id}}">
-                        <button class="btn btn-danger"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
+                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
                     </form>
                 @else
                     <form class="" action="/agregarCarrito" method="POST">
                         {{csrf_field()}}
                         <input type="hidden" name="id" value="{{$product->id}}">
-                        <button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
+                        <button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
                     </form>
                 @endif    
             @endif 
-            <h6><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> Agregar a lista de deseos</a></h6>
          </div>
          @if(session('usuario') and session('usuario')->type==2)
-         <form>
-         <a href="/borrarProductoDeDetalle/{{$product->id}}"><button type="button" name="button" class="btn btn-danger">Eliminar producto</button></a><br><br>
-         <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>
+      
+         <a href="/borrarProductoDeDetalle/{{$product->id}}"><button type="button" name="button" class="btn btn-danger btn-xs">Eliminar producto</button></a><br><br>
+         <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning btn-xs">Editar producto</button></a>
+       
          @endif
       </div>
       <div class="col-xs-12">

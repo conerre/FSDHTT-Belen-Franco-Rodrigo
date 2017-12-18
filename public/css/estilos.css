@@ -100,6 +100,13 @@ ul{
     border: 5px;
 }
 
+.c-divider {  
+  box-sizing: border-box; 
+  height: 21px; 
+  width: 3px; 
+  border: 1px solid #FFFFFF;
+}
+
 /*Slide*/
 
 .carousel-indicators .active {
@@ -111,6 +118,11 @@ ul{
   margin-left: 15%;
 }
 
+.btn-sm-home{
+  margin-top: 10px;
+}
+
+
 .titulo-slide2{
  font-size: 67px;
   font-weight: 900;
@@ -119,17 +131,33 @@ ul{
   margin-top: -35%;
 }
 
+.titulo-slide2-xs {
+    font-size: 37px;
+    font-weight: 900;
+    text-align: center;
+    /* padding-left: 15%; */
+    margin-top: -20%;
+}
+
 .titulo-slide1{
   font-size: 67px;
   font-weight: 900;
   margin-top: -12%;
 }
+
+.titulo-slide1-xs{
+  font-size: 37px;
+  font-weight: 900;
+}
+
 .subtitulo-slide1{
-  margin-top: -3%;
+  margin-top: -4%;
 }
 
 .subtitulo-slide2{
   margin-left: 15%;
+  margin-top: -6%;
+  margin-bottom: 10%;
 }
 
 .header-text {
@@ -146,7 +174,7 @@ ul{
 }
 
 .carousel-indicators {
-    bottom: 0px;
+    bottom: -10px;
     }
 
 .carousel-caption{
@@ -173,6 +201,20 @@ ul{
     border-color: black;
 }
 
+.btn-comprar-prod {
+  background-color: #3a3a3a;
+  color: white;
+  margin-top: 10px;
+}
+
+.glyphicon-shopping-cart:before {
+    color: white;
+}
+
+.glyphicon-shopping-cart:after {
+    color: black;
+}
+
   .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
     margin-left: 0px;
 }
@@ -190,6 +232,16 @@ ul{
      }
 
 /*Main*/
+
+.btn-todos-productos{
+  margin-top: 10px;
+}
+
+.btn-todos-productos a{
+  background-color: #b9b5b5;
+    color: white;
+}
+
 
 #productosDestacados{
     font-size: 18px;
@@ -286,6 +338,16 @@ label{
 }
 
 /*PRODUCTOS*/
+
+.titulo-producto{
+    font-size: 18px;
+    border-bottom: 1px solid grey;
+    width: 10%;
+    text-align: center;
+    margin: auto;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
 
 .productoBigContainer{
   margin:5.5% 0;
@@ -469,6 +531,10 @@ li.active{
 
   /*Agregar Producto*/
 
+  th {
+    text-align: right;
+}
+
 .addProductControl{
   width: 20%;
 }
@@ -484,14 +550,24 @@ li.active{
 }  
 
 .admin-row-prod{
-  margin: 5% ;
+  margin: 1%;
+  padding-bottom: 7%; ;
 }  
+
+#subtitulo-prod {
+  text-decoration: underline;
+}
+
+tr td a {
+  color: black;
+  text-decoration: none;
+}
 
 /*PREGUNTAS FRECUENTES*/
 
 .preguntasFrecuentesContainer{
   width: 100%;
-  margin: 14.1% 0;
+  margin: 4.1% 0;
 }
 
 .preguntas{
@@ -550,7 +626,7 @@ li.active{
 
 .historia {
       padding: 60px 50px;
-      margin: 6.7% 0;
+      margin: 1.7% 0;
   }
 
 
