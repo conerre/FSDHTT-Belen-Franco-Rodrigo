@@ -5,7 +5,7 @@
       <div class="col-md-6 col-sm-6 col-xs-12 item-photo">
          <img class="imagen-producto" src="{{$product->rutaThumbnail()}}">
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12 productoContainer">
+      <div class="col-md-5 col-sm-6 col-xs-12 productoContainer">
          <!-- Datos del vendedor y titulo del producto -->
          <h3>{{$product->name}}</h3>
          <!-- Precios -->
@@ -44,13 +44,15 @@
             @else
               <a href="/login" style="color: grey">Iniciá sesión para comprar!</a>
             @endif 
-         </div>
+         
          @if(session('usuario') and session('usuario')->type==2)
       
          <a href="/borrarProductoDeDetalle/{{$product->id}}"><button type="button" name="button" class="btn btn-danger btn-xs">Eliminar producto</button></a><br><br>
          <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning btn-xs">Editar producto</button></a>
        
          @endif
+
+        </div>
       </div>
       <div class="col-xs-12">
          <ul class="menu-items">

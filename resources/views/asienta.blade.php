@@ -98,7 +98,7 @@
                               <button class="btn btn-danger btn-xs" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
                           </form>
                         @else
-                          <form class="" action="/agregarCarrito" method="POST">
+                          <form class=" " action="/agregarCarrito" method="POST">
                               {{csrf_field()}}
                               <input type="hidden" name="id" value="{{$product->id}}">
                               <button class="btn btn-default btn-xs" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
@@ -106,10 +106,10 @@
                         @endif
                      @endif
 
-                   <a href="/producto/{{$product->id}}" class="btn btn-default" role="button">Comprar</a></p>
+                   <a href="/producto/{{$product->id}}" class="btn btn-info" role="button">Comprar</a></p>
                @if(session('usuario') && session('usuario')->type==2)
-               <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
-               <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        
+               <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger btn-xs">Elminar producto</button></a>
+               <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-edit-product btn-xs">Editar producto</button></a>        
                @endif
             </div>
          </div>

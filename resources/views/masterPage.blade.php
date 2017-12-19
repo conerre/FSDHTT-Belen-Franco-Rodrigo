@@ -114,7 +114,7 @@
                      <fieldset class="form-group text-white"> <label for="exampleInputEmail1">A nuestro newsletter</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> 
                      </fieldset>
-                     <button type="submit" class="btn btn-outline-light">Enviar</button>
+                     <button type="submit" class="btn btn-outline-light btn-info">Enviar</button>
                   </form>
                </div>
             </div>

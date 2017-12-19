@@ -464,6 +464,11 @@ label{
 
   /*Agregar Producto*/
 
+  .btn-edit-product{
+    color: white;
+    background-color: grey;
+  }
+
   th {
     text-align: right;
 }

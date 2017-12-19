@@ -6,7 +6,7 @@
      {{$category->name}}
      @if(session('usuario') && session('usuario')->type==2)
      <a href="/borrarCategoria/{{$category->id}}">
-     <button type="button" name="button" class="btn btn-danger">Eliminar categoria</button>
+     <button type="button" name="button" class="btn btn-danger btn-xs">Eliminar categoria</button>
      </a>
      @endif
   </h1>
@@ -38,10 +38,10 @@
                        @endif
     
 
-                       <a href="/producto/{{$product->id}}" class="btn btn-default" role="button">Comprar</a></p>
+                       <a href="/producto/{{$product->id}}" class="btn btn-info" role="button">Comprar</a></p>
                  @if(session('usuario') && session('usuario')->type==2)
-                 <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
-                 <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        
+                 <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger btn-xs">Elminar producto</button></a>
+                 <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning btn-xs">Editar producto</button></a>        
                  @endif
               </div>
            </div>
@@ -55,5 +55,6 @@
   @else
   <h1 class="nombre-categoria">No existe la categoría</h1>
   @endif 
+
 </div>  
 @endsection
