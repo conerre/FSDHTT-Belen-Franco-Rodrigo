@@ -47,7 +47,6 @@
                         <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nosotros <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                            <li><a href="/nuestraHistoria">Nuestra Historia</a></li>
-                           <li><a href="/experiencias">Experiencias</a></li>
                            <li><a href="/preguntasFrecuentes">Preguntas frecuentes</a></li>
                         </ul>
                      </li>

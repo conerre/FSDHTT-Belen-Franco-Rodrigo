@@ -19,8 +19,8 @@ class CategoryController extends Controller
         }
       }  
     	$category = Category::find($id);
-      $category->products = Product::paginate(12);
-    	$VAC = compact("category", " category->products", "enCarrito");
+      $category->products = Product::paginate(12, ['*'], 'page_name');
+    	$VAC = compact("category", " category->products", "enCarrito", "products");
     	return view("category", $VAC);
     }
 

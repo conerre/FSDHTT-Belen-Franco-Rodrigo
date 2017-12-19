@@ -129,23 +129,7 @@ class ProductController extends Controller
       $products = Product::where("name", "like", "%". $buscar . "%")->get();
       $categories = Category::where("name", "like", "%". $buscar . "%")->get();
       $carrito = session("carrito");
-      foreach($products as $product){  
-          if ($carrito && in_array($product->id, $carrito)) {
-            $enCarritoP = true;
-          } else {
-            $enCarritoP = false;
-          }
-        }
-      foreach($categories as $category){
-        foreach($category->productos as $product){  
-          if ($carrito && in_array($product->id, $carrito)) {
-            $enCarritoC= true;
-          } else {
-            $enCarritoC = false;
-          }
-        } 
-      }
-      $VAC = compact("products", "categories", "enCarritoP", "enCarritoC");
+      $VAC = compact("products", "categories");
       return view("resultados", $VAC);
     }
 }

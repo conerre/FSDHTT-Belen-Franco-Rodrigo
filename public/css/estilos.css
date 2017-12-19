@@ -85,6 +85,10 @@ ul{
 
 /*Categorias*/
 
+.categoryContainer{
+  margin: 6.8% 0 20.9% 0;
+}
+
 .nombre-categoria{
 }
 
@@ -208,7 +212,6 @@ ul{
 }
 
 .glyphicon-shopping-cart:before {
-    color: white;
 }
 
 .glyphicon-shopping-cart:after {
@@ -242,6 +245,9 @@ ul{
     color: white;
 }
 
+.btn-danger{
+  background-color: #9e1104;
+}
 
 #productosDestacados{
     font-size: 18px;
@@ -350,7 +356,7 @@ label{
 }
 
 .productoBigContainer{
-  margin:5.5% 0;
+  margin:14.5% 0;
 }
 
 .imagen-producto {
@@ -426,79 +432,6 @@ label{
   height: 25px;
   width: 25px;
 }
-
-/*ul li{
-  margin-right:25px;
-  font-weight:lighter;
-  cursor:pointer
-}
-li.active{
-  border-bottom:3px solid silver;
-}
-
-.item-photo{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  border-right:1px solid #f6f6f6;
-}
-.menu-items{
-  list-style-type:none;
-  font-size:11px;
-  display:inline-flex;
-  margin-bottom:0;
-  margin-top:20px
-}
-.btn-success{
-  width:100%;
-  border-radius:0;
-  background-color: black;
-  border-color: black
-}
-.section{
-  width:100%;
-  margin-left:-15px;
-  padding:2px;padding-left:15px;
-  padding-right:15px;
-  background:white
-}
-.title-price{
-  margin-top:30px;
-  margin-bottom:0;
-  color:black
-}
-.title-attr{
-  margin-top:0;
-  margin-bottom:0;
-  color:black;
-}
-
-.attr.active,.attr2.active{ 
-  border:1px solid orange;
-}
- .container {
-   margin-top:0px !important;
- }
- .container .row{
-   padding:0 !important;
- }
- .container .row .col-xs-12.col-sm-5{
-     padding-right:0 ;    
- }
- .container .row .col-xs-12.col-sm-9 div p{
-     padding-left:0 !important;
-     padding-right:0 !important;
- }
- .container .row .col-xs-12.col-sm-9 div ul{
-    padding-left:10px !important;
-   }            
- .section{
-  width:104%;
-}
- .menu-items{
-  padding-left:0;
-}
-*/
 
 
 /* Comentarios*/
@@ -598,7 +531,7 @@ tr td a {
 }
 
 .registroContainer{
-  margin: 5.5% 0;
+  margin: 3.3% 0;
 }
 
 
@@ -614,7 +547,7 @@ tr td a {
 }
 
 .loginContainer{
-  margin: 10.5% 0;
+  margin: 9% 0;
 }
 
 
@@ -633,11 +566,20 @@ tr td a {
 /*CONTACTO*/
 
 .contactoContainer{
-    margin: 11.2% 4%;
+    margin: 5% 4%;
     padding: 3%;
     background-color: #f2f2f2;
 }
 
+.us h2 {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #9f8f68;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
 
 /*NOTIFICACIONES*/
 .notificacion{
@@ -668,6 +610,12 @@ tr td a {
   border-bottom:1px #f8f8f8 solid;  
   margin:5px 0  5px 0
 }
+
+/*Resultados*/
+.resultadosContainer{
+  margin: 5% 0 27.5% 0;
+}
+
 
 /*Footer*/
 
@@ -799,14 +747,3 @@ a {
     margin-right: -90px;
 }
 
-/*contacto*/
-
-.us h2 {
-    font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    border-bottom: 1px solid #9f8f68;
-    line-height: 24px;
-    margin-bottom: 20px;
-}

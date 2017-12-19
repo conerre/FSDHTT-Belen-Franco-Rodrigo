@@ -44,14 +44,16 @@
 			<td><a href="/producto/{{$product->id}}">{{$product->stock}}</a></td>
 			<td><a href="/producto/{{$product->id}}">{{$product->article_code}}</a></td>
 	
-			@if(session('usuario')->type===2)
+			@if(session('usuario') && session('usuario')->type===2)
 				<td><a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-info">Editar</button></a></td>
 				<td><a href="/borrarProducto/{{$product->id}}"><button type="button" class="btn btn-danger">Eliminar</button></a></td>
 			@endif
-			
 		</tr>
 	@endforeach
 	</tbody>
 </table>
+	<div style="text-align: center">
+	{{$products->links()}}
+	</div>
 </div>
 @endsection
