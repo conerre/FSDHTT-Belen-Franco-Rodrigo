@@ -15,23 +15,7 @@ class MainController extends Controller
         $destacados = Product::where("stock", "<", 2)->take(4)->get();
         $products = Product::orderBy('id', 'desc')->take(4)->get();
         $carrito = session("carrito");
-
-        foreach ($products as $product) {
-            if ($carrito && in_array($product->id, $carrito)) {
-                $enCarrito = true;
-            } else {
-                $enCarrito = false;
-              }
-        }
-        foreach ($destacados as $destacado) {
-            if ($carrito && in_array($destacado->id, $carrito)) {
-                $enCarrito = true;
-            } else {
-                $enCarrito = false;
-              }
-        }
-
-        $VAC = compact("products", "destacados", "enCarrito");
+        $VAC = compact("products", "destacados");
 
         return view("asienta", $VAC);
     }

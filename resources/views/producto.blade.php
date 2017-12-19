@@ -24,7 +24,6 @@
          </div>
          <!-- Botones de compra -->
          <div class="section">
-            <div class="section">
             @if(session('usuario'))
                <a href="/compro/{{$product->id}}"><button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Comprar</button></a>
             </div>
@@ -33,15 +32,17 @@
                     <form class="" action="/quitarCarrito" method="POST">
                         {{csrf_field()}}
                         <input type="hidden" name="id" value="{{$product->id}}">
-                        <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Quitar del carro</button>
+                        <button class="btn btn-danger btn-xs" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button><br><br>
                     </form>
                 @else
                     <form class="" action="/agregarCarrito" method="POST">
                         {{csrf_field()}}
                         <input type="hidden" name="id" value="{{$product->id}}">
-                        <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-heart-empty"></span> Agregar a favoritos</button>
+                        <button class="btn btn-default btn-xs" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button><br><br>
                     </form>
                 @endif    
+            @else
+              <a href="/login" style="color: grey">Iniciá sesión para comprar!</a>
             @endif 
          </div>
          @if(session('usuario') and session('usuario')->type==2)

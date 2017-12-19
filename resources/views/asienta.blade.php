@@ -88,20 +88,25 @@
             <div class="caption">
                <h4>{{$product->name}}</h4>
                <h5>$ {{$product->price}}</h5>
-                 <p> @if($enCarrito)
-                       <form class="" action="/quitarCarrito" method="POST">
-                           {{csrf_field()}}
-                           <input type="hidden" name="id" value="{{$product->id}}">
-                           <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
-                       </form>
-                   @else
-                       <form class="" action="/agregarCarrito" method="POST">
-                           {{csrf_field()}}
-                           <input type="hidden" name="id" value="{{$product->id}}">
-                           <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-heart-empty"></span> Agregar a favoritos</button>
-                       </form>
-                   @endif     
-                   <a href="/producto/{{$product->id}}" class="btn btn-default btn-md btn-comprar-prod" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Comprar</a></p>
+                 <p>
+                  
+                  @if(session('usuario'))
+                     @if(session("carrito") && in_array($product->id, session("carrito")))
+                          <form class="" action="/quitarCarrito" method="POST">
+                              {{csrf_field()}}
+                              <input type="hidden" name="id" value="{{$product->id}}">
+                              <button class="btn btn-danger btn-xs" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
+                          </form>
+                        @else
+                          <form class="" action="/agregarCarrito" method="POST">
+                              {{csrf_field()}}
+                              <input type="hidden" name="id" value="{{$product->id}}">
+                              <button class="btn btn-default btn-xs" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
+                          </form>
+                        @endif
+                     @endif
+
+                   <a href="/producto/{{$product->id}}" class="btn btn-default" role="button">Comprar</a></p>
                @if(session('usuario') && session('usuario')->type==2)
                <a href="/borrarProducto/{{$product->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
                <a href="/editarProducto/{{$product->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        
@@ -124,7 +129,26 @@
             <div class="caption">
                <h4>{{$destacado->name}}</h4>
                <h5>$ {{$destacado->price}}</h5>
-               <p><a href="#" class="btn btn-default btn-xs" role="button">Agregar a carrito</a> <a href="/producto/{{$product->id}}" class="btn btn-default btn-md btn-comprar-prod" role="button">Comprar</a></p>
+               <p>
+
+                 @if(session('usuario'))
+                     @if(session("carrito") && in_array($product->id, session("carrito")))
+                          <form class="" action="/quitarCarrito" method="POST">
+                              {{csrf_field()}}
+                              <input type="hidden" name="id" value="{{$product->id}}">
+                              <button class="btn btn-danger btn-xs" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
+                          </form>
+                        @else
+                          <form class="" action="/agregarCarrito" method="POST">
+                              {{csrf_field()}}
+                              <input type="hidden" name="id" value="{{$product->id}}">
+                              <button class="btn btn-default btn-xs" type="submit"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
+                          </form>
+                        @endif
+                     @endif
+  
+
+                     <a href="/producto/{{$product->id}}" class="btn btn-default" role="button">Comprar</a></p>
                @if(session('usuario') && session('usuario')->type==2)
                <a href="/borrarProducto/{{$destacado->id}}"><button type="button" name="button" class="btn btn-danger">Elminar producto</button></a>
                <a href="/editarProducto/{{$destacado->id}}"><button type="button" class="btn btn-warning">Editar producto</button></a>        
