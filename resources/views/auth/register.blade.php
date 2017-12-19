@@ -83,6 +83,9 @@
                         </div>
                     </form>
                 </div>
+                <h5><a class="btn text-center text-danger" href="login" style="color: #e7e7e7">
+                                    ¿Ya estás registrado/a? Hacé click aquí
+                                </a></h5>
             </div>
         </div>
     </div>

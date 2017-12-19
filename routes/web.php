@@ -37,6 +37,7 @@ Route::get("/compro/{id}", "CompraController@menosStock");
 
 	//Productos	
 Route::get("/productos", "ProductController@todos");
+//Route::get("/productosTodos", "ProductController@todosProd");
 Route::get("/producto/{id}", "ProductController@show");	
 
 	//Carrito
@@ -57,6 +58,8 @@ Route::get("/nuestraHistoria", "MainController@aNuestraHistoria");
 Route::get("/comoRealizarCompra", "MainController@aComoRealizarCompra");
 
 Route::get("/preguntasFrecuentes", "MainController@aPreguntasFrecuentes");
+
+//Route::get("/productosTodos", "MainController@productosTodos");
 
 Route::get("/comentarios", "MainController@aComentarios");
 

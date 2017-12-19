@@ -33,13 +33,13 @@
                     <form class="" action="/quitarCarrito" method="POST">
                         {{csrf_field()}}
                         <input type="hidden" name="id" value="{{$product->id}}">
-                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
+                        <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Quitar del carro</button>
                     </form>
                 @else
                     <form class="" action="/agregarCarrito" method="POST">
                         {{csrf_field()}}
                         <input type="hidden" name="id" value="{{$product->id}}">
-                        <button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Agregar al carro</button>
+                        <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-heart-empty"></span> Agregar a favoritos</button>
                     </form>
                 @endif    
             @endif 
@@ -53,7 +53,7 @@
       </div>
       <div class="col-xs-12">
          <ul class="menu-items">
-            <li class="active">Detalle del producto</li>
+            <li>Detalle del producto</li>
          </ul>
          <div class="descripcion-producto">
             <p>

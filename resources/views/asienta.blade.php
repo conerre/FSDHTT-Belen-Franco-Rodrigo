@@ -70,11 +70,12 @@
       <a href="/categoria/{{$category->id}}" class="btn c-divider">{{$category->name}}</a>
       @endforeach
    </div>
+   @if(session('usuario'))
  <div class="btn-group btn-todos-productos btn-group-justified ">
-      <a href="/productos" class="btn btn">Ver todos</a>
+      <a href="productos" class="btn btn">Ver todos</a>
    
    </div>
-
+@endif
    <div class="row">
       <h4 id="productosDestacados">Últimos productos</h4>
    </div>
@@ -91,7 +92,7 @@
                        <form class="" action="/quitarCarrito" method="POST">
                            {{csrf_field()}}
                            <input type="hidden" name="id" value="{{$product->id}}">
-                           <button class="btn btn-danger"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
+                           <button class="btn btn-default btn-xs"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Quitar del carro</button>
                        </form>
                    @else
                        <form class="" action="/agregarCarrito" method="POST">

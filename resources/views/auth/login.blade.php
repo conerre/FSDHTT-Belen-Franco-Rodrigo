@@ -60,6 +60,9 @@
                             </div>
                         </div>
                     </form>
+                   <h5><a class="btn text-center text-danger" href="register" style="color: #e7e7e7">
+                                    ¿Aún no te registraste? Hacé click aquí
+                                </a></h5>
                 </div>
             </div>
         </div>
