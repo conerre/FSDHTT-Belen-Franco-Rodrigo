@@ -47,7 +47,7 @@
                         <a href="construccion.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Nosotros <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                            <li><a href="/nuestraHistoria">Nuestra Historia</a></li>
-                           <li><a href="/experiencias">Experiencias</a></li>
+                           <li><a href="/comentarios">Experiencias</a></li>
                            <li><a href="/preguntasFrecuentes">Preguntas frecuentes</a></li>
                         </ul>
                      </li>
@@ -87,7 +87,7 @@
                   <ul class="list-unstyled">
                      <a href="index.php" class="text-white"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a>
                      <br>
-                     <a href="#" class="text-white">Nosotros</a>
+                     <a href="/nuestraHistoria" class="text-white">Nuestra historia</a>
                      <br>
                      <a href="/preguntasFrecuentes" class="text-white">Preguntas fecuentes</a>
                      <br>
